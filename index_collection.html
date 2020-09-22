@@ -1,0 +1,4529 @@
+<!--1-->
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' type='text/css'
+    media='all' />
+<!-- If required -->
+<!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?dl=0' type='text/css' media='screen' /> -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' type='text/css'
+    media='all' />
+
+<style>
+    .toggle .osh-btn .label {
+        color: #6E6E6E;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: left;
+        padding: 0
+    }
+
+    .navAllCat .label {
+        color: #6E6E6E;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: left;
+        padding: 0
+    }
+
+    .navAllCat .caret {
+        display: inherit;
+        width: initial;
+        height: 0;
+        margin-left: inherit;
+        border-top: inherit;
+        border-right: inherit;
+        border-left: inherit;
+        vertical-align: baseline
+    }
+
+    .osh-btn>.caret {
+        display: inherit;
+        width: initial;
+        height: 0;
+        margin-left: inherit;
+        border-top: inherit;
+        border-right: inherit;
+        border-left: inherit
+    }
+
+    .osh-dropdown>.toggle>.osh-btn>.caret {
+        vertical-align: baseline
+    }
+
+    .main_header--nav-right .dropdown-header {
+        display: initial;
+        padding: 0;
+        font-size: 12px;
+        line-height: 1.42857143;
+        color: #777;
+        white-space: nowrap
+    }
+
+    .btn-header {
+        padding: 0
+    }
+
+    .panel-categories h3 {
+        font-size: 1em
+    }
+
+    #search_box-cancel_btn .label {
+        color: #416998;
+        font-size: 100%;
+        font-weight: 500;
+        text-align: left;
+        vertical-align: baseline;
+        border-radius: 0
+    }
+
+    .search_box--cancel_btn {
+
+        padding: 11px 0 !important;
+    }
+
+    .caret.osh-font-light-arrow-down {
+        display: inline;
+    }
+
+    .osh-featured-box.-sku .sku>.link {
+        text-decoration: none;
+    }
+
+    .caret {
+        display: inline-block;
+        width: initial;
+        height: initial;
+        margin-left: initial;
+        vertical-align: initial;
+        border: none;
+    }
+/* <!--end 1--> */
+/* <!--2--> */
+    section.pagination {
+        display: block !important;
+    }
+
+    .box-heading {
+        text-align: center;
+        color: #ff7102;
+        font-weight: 600;
+        margin-top: 20px;
+        font-family: 'Lato', sans-serif;
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .osh-featured-box.-carousel>.wrapper.-carousel {
+        width: 1170px !important;
+        max-height: 350px;
+    }
+
+    .osh-featured-box>header>.headline {
+        border: none;
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        color: #373838;
+        font-weight: 600;
+        margin-top: 10px;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-size: 26px;
+    }
+
+    .osh-featured-box>header {
+        border-bottom: none;
+        position: relative;
+        text-align: center;
+        margin-bottom: 0 !important;
+    }
+
+    .osh-featured-box {
+        position: relative;
+        margin-bottom: 0 !important;
+    }
+
+    .text-display-3 {
+        display: block;
+        font-size: 20px !important;
+        color: #373838 !important;
+        font-weight: 600 !important;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        width: 98%;
+        margin-bottom: -12px !important;
+        margin-top: 20px;
+    }
+
+    .vertical-box {
+        border: 1px solid #ddd;
+        border-radius: 7px;
+        padding-left: 20px;
+        padding-top: 5px;
+        height: 90px;
+        margin-right: 10px;
+    }
+
+    .vertical-box-content {
+        padding-left: 10px;
+        float: left;
+        color: #fe7208;
+        font-weight: 600;
+    }
+
+    .city-box {
+        border: 1px solid #ddd;
+        border-radius: 7px;
+        padding: 15px;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+
+    .coming-soon {
+        position: relative;
+        background-color: #ff7102;
+        box-shadow: 3px 3px #9e9e9e;
+        float: right;
+    }
+
+    .coming-soon>p {
+        margin: 0;
+        font-size: 11px;
+        padding: 5px 10px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+/* <!--end 2--> */
+/* <!--3--> */
+    .glyphicon {
+        top: 5px;
+    }
+
+    .dropdown-menu {
+        cursor: pointer;
+        height: 270px;
+        overflow-y: scroll;
+    }
+
+    .city-container {
+        height: 270px;
+        overflow-y: scroll;
+    }
+
+    .banner-text {
+        position: relative;
+        color: white;
+    }
+
+    .center-left {
+        position: absolute;
+        top: 55px;
+        width: 23%;
+        left: 65%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .btn-lg {
+        padding: 10px 9px;
+    }
+
+    .btn-warning {
+        background-color: #ff7102;
+        border-color: #ff8d00;
+    }
+
+    .seller {
+        text-align: center;
+        margin: 20px 0 50px 0;
+        background: #09b909;
+        line-height: 3;
+        border-radius: 30px;
+    }
+/*<!--end 3 -->*/
+/*<!--4 -->*/
+    /*<!--FAQ Styling Starts Here-->*/
+
+    .block-acrdion-main {
+        margin-top: 5px;
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+
+    .acrdion-title {
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+
+    .acrdion-title h3 {
+        font-size: 18px;
+        float: left;
+        color: #F68B1E;
+        margin: 0;
+        line-height: 20px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .acrdion-title p {
+        float: right;
+        margin: 0 0 10px 0;
+        font-size: 18px;
+        color: #005387;
+        cursor: pointer;
+        line-height: 20px;
+    }
+
+    .panel-group {
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+
+    .panel-default>.panel-heading {
+        background-color: #fff !important;
+    }
+
+    .panel.panel-default {
+        border-radius: 0 !important;
+        margin: 5px !important;
+    }
+
+    .lzd-act-richtext a {
+    text-decoration: none !important;
+    color: #5660de !important;
+}
+
+    .panel-group .panel-heading a {
+        display: block;
+        margin: 16px;
+        text-decoration: none;
+        position: relative;
+        font-size: 16px;
+        line-height: 20px;
+        color: #333 !important;
+        font-weight: 500 !important;
+    }
+
+    .panel-group .panel-heading a.collapsed:after {
+        content: '+';
+        position: absolute;
+        right: 20px;
+        top: 25%;
+        font-size: 30px;
+        color: #F68B1E;
+    }
+/* <!--end 4--> */
+/* <!--5--> */
+    .panel-group .panel-heading a:after {
+        content: '-';
+        position: absolute;
+        right: 20px;
+        top: 25%;
+        font-size: 30px;
+        color: #F68B1E;
+    }
+
+    .panel-body {
+        padding: 15px 35px 15px 0 !important;
+        margin: 0 20px;
+    }
+
+    .panel-heading {
+        padding: 0px 8px !important;
+    }
+
+    .pull-right {
+        display: none !important;
+    }
+
+    .col-sm-1.col-xs-6.partner-mobile-margin {
+        width: 11.64% !important;
+        margin: 5px;
+    }
+    .dropdown-menu {
+    cursor: pointer;
+    height: 280px;
+    width: -webkit-fill-available;
+    overflow-y: scroll;
+}
+.osh-featured-box>header>.headline {
+        font-size: 24px;
+        line-height: 26px;
+        border-top: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        display: inline-block;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        text-transform: uppercase;
+        padding: 7px 20px;
+        font-weight: 600;
+    }
+
+    @media only screen and (max-width: 1199px) {
+        .col-sm-1.col-xs-6.partner-mobile-margin {
+            width: 11.45% !important;
+            margin: 5px;
+        }
+    }
+
+    @media only screen and (max-width: 769px) {
+        .block-acrdion-main {
+            padding: 0 !important;
+        }
+
+        .acrdion-title p {
+            font-size: 14.15px;
+            margin: 0 0 10px 0;
+            float: left;
+        }
+
+        .panel-group .panel-heading a:after {
+            right: 11px;
+        }
+
+        .panel-group .panel-heading a.collapsed:after {
+            right: 8px;
+        }
+
+        .panel-body {
+            padding: 15px 35px 15px 0 !important;
+            margin: 0 8px;
+        }
+
+        .panel-group .panel-heading a {
+            padding: 10px 7px;
+            font-weight: 500;
+        }
+    }
+
+    @media only screen and (max-width: 769px) {
+        .block-acrdion-main {
+            padding: 0 !important;
+        }
+
+        .acrdion-title {
+            padding-bottom: 20px;
+        }
+
+        .acrdion-title p {
+            font-size: 14.15px;
+            margin: 12px 0 0 4px;
+            float: left;
+        }
+/* <!--end 5--> */
+/* <!--6--> */
+        .panel-group .panel {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            border-radius: 0 !important;
+        }
+
+        .panel-group .panel-heading a:after {
+            right: 11px;
+        }
+
+        .panel-group .panel-heading a.collapsed:after {
+            right: 8px;
+        }
+
+        .panel-body {
+            padding: 15px 35px 15px 0 !important;
+            margin: 0 8px;
+        }
+
+        .panel-group .panel-heading a {
+            padding: 10px 7px;
+            font-weight: 500;
+            padding-right: 30px;
+        }
+    }
+
+    @media (min-width: 414px) and (max-width: 768px) {
+        .acrdion-title p {
+            margin: 20px 0 0 0;
+            float: right;
+        }
+    }
+
+    p.question {
+        display: inline-block;
+        margin-left: 1%;
+        font-weight: bold;
+        width: 92%;
+    }
+
+    .panel-title {
+        cursor: pointer;
+    }
+
+    .panel-collapse {
+        display: none;
+    }
+
+    .panel-collapse.in {
+        display: block;
+    }
+
+    .panel-heading h4 {
+        margin-top: 0;
+    }
+    /*<!--FAQ Styling Ends Here-->*/
+    @media only screen and (max-width: 480px) {
+        .box-heading {
+            font-size: 20px !important;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {}
+
+    div[class^=col-] {
+        padding: 5px 5px;
+    }
+
+    .lzd-act-richtext ol,
+    .lzd-act-richtext ul {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .lzd-act-richtext ol li,
+    .lzd-act-richtext ul li {
+        list-style: none !important;
+    }
+
+    .lzd-act-richtext {
+        line-height: inherit !important;
+    }
+
+    .lzd-act-richtext h1 {
+        font-size: 24px !important;
+    }
+
+    .lzd-act-richtext p {
+        margin: auto !important;
+        clear: none !important;
+    }
+
+    .lzd-act-richtext h4 {
+        font-size: 18px !important;
+        margin-top: 0 !important;
+    }
+
+    .lzd-act-richtext h5 {
+        font-size: 14px !important;
+        margin-top: 7px !important;
+        margin: 10px 0 !important;
+    }
+</style>
+<!--end 6 -->
+<!--7 -->
+<div class="container-fluid" style=" max-width: 1170px; margin: 0 auto;">
+   
+    <div class="row banner-text">
+        <div class="col-sm-12" style="padding-top:0 !important;"><img
+                src="https://laz-img-cdn.alicdn.com/tfs/TB10x1IxUY1gK0jSZFCwu3wqXXa.png"
+                class="img-responsive center-block">
+            <div class="center-left hidden-xs">
+                <h3 style="margin-bottom:8px">Convenience is now just around the corner</h3>
+                <p style="font-size: 20px;">Daraz Customer Collection Points!</p>
+                <button class="btn btn-lg btn-warning" id="findshop" style="text-align: left">Find a Daraz Customer Return <br> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Collection Points</button>
+            </div>
+        </div>
+    </div>
+
+<div>
+        <div>
+            <h3 class="box-heading">How Daraz Customer Collection Points Work?</h3>
+        </div>
+    <!--<div class="row"  >
+        <div class="col-sm-4 col-xs-12 text-center"><img
+                src="//laz-img-cdn.alicdn.com/images/ims-web/TB1drK4s4YaK1RjSZFnXXa80pXa.png"
+                class="img-responsive center-block">
+            <h4><strong>Order it</strong></h4>
+            <p>Confused about an order?
+                <br> Book it right at our shop with
+                <br> our people to help you out.
+            </p>
+        </div>-->
+        <div class="container-fluid">
+            <div class=".col-xs-6 text-center" style="float: left;padding-left: 213px;" >
+            <img 
+                src="//laz-img-cdn.alicdn.com/images/ims-web/TB1NMK4s4YaK1RjSZFnXXa80pXa.png"  class="img-responsive center-block">
+            <div
+                style="position: absolute; top: 10%; left: 65%; padding: 1px 5px; background-color: #ff7102; box-shadow: 3px 3px #9e9e9e; ">
+            </div>
+            <h4><strong>Collect packages <br>without shipping charge!</strong></h4>
+            <p>Not sure when you
+                <br> will be home? Just book online
+                <br> and pick up your order from collection points.
+            </p>
+            </div>
+            <div class=".col-xs-6 text-center" style="float: right;padding-right: 248px;">
+            <img
+                src= "//laz-img-cdn.alicdn.com/images/ims-web/TB1J.eMs8LoK1RjSZFuXXXn0XXa.png"  class="img-responsive center-block">
+            <h4><strong>Return with Valid Reason!</strong></h4>
+            <p>Got the wrong or incorrect
+                <br> product at the time of delivery?
+                <br> Come by Our collection Points and return it easily!
+            </p>
+            </div>
+        </div>
+</div>
+</div>
+    <!-- End -->
+<!--end 7 -->
+<!-- 8 -->
+    <!-- Find Daraz Shop -->
+    <div class="container-fluid" style=" max-width: 1170px; margin: 0 auto;">
+    <div class="row" id="shop" style="padding: 0 5px;">
+        <h3 class="box-heading" style="background-color: #ff7102; color: #fff; padding: 10px 0; margin-bottom: 50px;">
+            Find a Daraz Customer Collection Points</h3>
+        <div class="col-sm-8 col-xs-12">
+            <iframe id="map"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3652.064817661932!2d90.3817541!3d23.7450679!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8ba11974a2f%3A0x99e120f8ab2f1961!2sDaraz+Bangladesh+Dhanmondi+Hub!5e0!3m2!1sen!2sbd!4v1553504712768"
+                width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <h4 class="text-center" style="margin-top: 0;"><strong>Select your city</strong></h4>
+            <div class="dropdown" style="margin-bottom: 20px;">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
+                    style="width:100%; border-radius: 7px; text-align: left;">
+                    <span id="selectcity" style="text-align: left;">Daraz Collection Points</span>
+                    <span class="glyphicon glyphicon-chevron-down" style="float: right;"></span>
+                </button>
+                <div class="dropdown-menu">
+                    <li>
+                        <a id="Dhk">Dhaka</a>
+                    </li>
+                    <li>
+                        <a id="Bar">Barisal</a>
+                    </li> 
+                    <li>
+                        <a id="Bag">Bagura</a>
+                    </li>
+                    <li>
+                        <a id="Bra">Brahamanbaria </a>
+                    </li>
+                    <li>
+                        <a id="Bager">Bagerhat</a>
+                    </li>
+                    <li>
+                        <a id="Ctg">Chittagong</a>
+                    </li>
+                    <li>
+                        <a id="Chad">Chandpur</a>
+                    </li>
+                    <li>
+                        <a id="Chap">Chapai Nawabganj</a>
+                    </li>
+                    <li>
+                        <a id="Cox">Cox Bazar</a>
+                    </li>
+                    <li>
+                        <a id="Cumi">Cumilla</a>
+                    </li>
+                    <li>
+                        <a id="Din">Dinajpur</a>
+                    </li>
+                    <li>
+                        <a id="Far">Faridpur</a>
+                    </li>
+                    <li>
+                        <a id="Fen">Feni</a>
+                    </li>
+                    <li>
+                        <a id="Gaz">Gazipur</a>
+                    </li>
+                    <li>
+                        <a id="Gop">Gopalganj</a>
+                    </li>
+                    <li>
+                        <a id="Gai">Gaibandha </a>
+                    </li>
+                    
+                    <li>
+                        <a id="Habi">Habiganj </a>
+                    </li>
+                    <li>
+                        <a id="Jess">Jessore</a>
+                    </li>
+                    <li>
+                        <a id="Jhen">Jhenaidah</a>
+                    </li>
+                    <li>
+                        <a id="Jamal">Jamalpur </a>
+                    </li>
+                    <li>
+                        <a id="Kuri">Kurigram </a>
+                    </li>
+                    <li>
+                        <a id="Khul">Khulna</a>
+                    </li>
+                    <li>
+                        <a id="Kis">Kishorganj</a>
+                    </li>
+                    <li>
+                        <a id="Kus">Kustia</a>
+                    </li>
+                    <li>
+                        <a id="Man">Manikgonj</a>
+                    </li>
+                    <li>
+                        <a id="Mou">Moulvibazar</a>
+                    </li>
+                    <li>
+                        <a id="Mymen">Mymenshing</a>
+                    </li>
+                    <li>
+                        <a id="Mad">Madaripur </a>
+                    </li>
+                    <li>
+                        <a id="Mag">Magura </a>
+                    </li>
+<!--end 8--> 
+<!-- 9-->
+                    <li>
+                        <a id="Nil">Nilphamari </a>
+                    </li>
+                    <li>
+                        <a id="Nara">Narayanganj</a>
+                    </li>
+                    <li>
+                        <a id="Nars">Narsingdi</a>
+                    </li>
+                    <li>
+                        <a id="Nao">Naogaon</a>
+                    </li>
+                    <li>
+                        <a id="Noa">Noakhali</a>
+                    </li>
+                    <li>
+                        <a id="Pab">Pabna</a>
+                    </li>
+                    <li>
+                        <a id="Ran">Rangpur</a>
+                    </li>
+                    <li>
+                        <a id="Raj">Rajshahi</a>
+                    </li>
+                    <li>
+                        <a id="Sav">Savar</a>
+                    </li>
+                    <li>
+                        <a id="Sira">Sirajgonj</a>
+                    </li>
+                    <li>
+                        <a id="Syl">Sylhet</a>
+                    </li>
+                    <li>
+                        <a id="Tan">Tangail</a>
+                    </li>
+                    <li>
+                        <a id="Ton">Tongi</a>
+                    </li>
+                    <li>
+                        <a id="Thakur">Thakurgaon </a>
+                    </li>
+                    <li>
+                        <a id="Sat">Satkhira </a>
+                    </li>
+                    
+                </div>
+            </div>
+<!--end 9 -->
+<!-- 10 -->
+                  <!--Dhaka -->
+
+            <div id="Dhaka" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Dhanmondihub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Dhanmondi</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Green Jasmine, House 8/A, Road 7, Dhanmondi - 1205</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick=" Zigatolahub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub  Zigatola</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">House:-44, Road:-02, West Dhanmondi</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="Mirpurhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Mirpur</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">225, Club Road, Senpara, Mirpur 10, Dhaka</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="Kalshihub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Kalshi </strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Ground & 1st Floor, 695/1 Manikdi Bazar Road, Manikdi, Dhaka Cantonment, Dhaka-1206</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="MirpurZooRoadhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Mirpur Zoo Road</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">1st Floor, Holding No:-55 Box Nagar, Mirpur Zoo Road, Section:-1, Mirpur,Dhaka</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="MirpurPirerbaghub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Mirpur Pirerbag</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">1st Floor, 241/1 South Pirerbag, Mirpur, Dhaka</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="Kalachandpurhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Kalachandpur</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">NAVANA SYLVANIA, 1st floor, Flat: A&B, Ka-6/A Nodda, Kalachandpur, Baridara, Dhaka 1216</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="NatunBazaar1hub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub NatunBazaar</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Plot:-1040,Japan School Road, Baridhara J Block, Vatara, Dhaka:-1212</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="TejgaonSortCenterhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub  Tejgaon Sort Center</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">269-272,  Tejgaon Industrial Area, Dhaka, Bangladesh</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="Tejgaonhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Tejgaon</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">123,  Tejgaon Industrial area, Dhaka-1208</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="Mohammadpur()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Mohammadpur</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">House # 1, Dhaka Housing, Adabor, Mohammadpur Dhaka</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="OldTown()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Old Town</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">88/89, Nazim Uddin Road, Old Town, Dhaka</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="Keranigonj()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Keranigonj</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Shuvadda, Purbo para, Mahtab Soap Factory, Chitakhola Road, South Keranigonj, Dhaka</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="Uttara1hub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Uttara </strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">1st Floor, Flat:-A1 & A2, House:-18, Alaul Avenue, Sector:-6, Uttara Model Town, Dhaka</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="Uttara2hub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Uttara </strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">House No 16, 4th Floor, Jewel Tower, 34 Gareeb-e-Nawaz Ave, Section 11, Dhaka 1230</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="Khilgaon1hub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Khilgaon</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">G-3, MainRoad, South Banasree, Khilgaon</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="Malibaghhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Malibagh</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">1st Floor, 116 & 116A, Malibagh, Old Malibagh DIT Road, Dhaka</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="Motijheelhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Motijheel</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">44/5 Atish Dipankar Road, Mugda Bisho Road ,Sobujbagh</p>
+                    </address>
+                </div>
+            </div>
+<!--end 10 -->
+<!-- 11 -->
+                 <!--Chittagong -->
+
+            <div id="Chittagong" class="city-container" style="display: none; cursor: pointer;">
+                    <div class="city-box" onclick="Chittagonghub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Chittagong</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Osman Court, 70, Agrabad C/A, Chattogram- 4100</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Lakshmipurhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Lakshmipur </strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Karim Tower,Dhaka Raipur Highway Road, Baghbari, Opposite to TC office, Luxmipur, Chittagong</p>
+                        </address>
+                    </div>
+            </div>
+
+                 <!--Khulna -->
+
+            <div id="Khulna" class="city-container" style="display: none; cursor: pointer;">
+                    <div class="city-box" onclick="Khulnahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Khulna</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">47 KDA Avenue (Beside Dalmill Mor), Khulna.</p>
+                        </address>
+                    </div>
+            </div>
+
+                 <!--Rajshahi -->
+
+            <div id="Rajshahi" class="city-container" style="display: none; cursor: pointer;">
+                    <div class="city-box" onclick="Rajshahihub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Rajshahi</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Khanbari (Holding No 206) inside of Soccho Tower, Alupotti, Rajshahi</p>
+                        </address>
+                    </div>
+            </div>
+
+                  <!--Sylhet -->
+
+            <div id="Sylhet" class="city-container" style="display: none; cursor: pointer;">
+                    <div class="city-box" onclick="Sylhethub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Sylhet</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House No- A/2, Rahman Tower, Ground Floor, Naiorpool, Beside Osmani Jadughor, Sylhet-3100.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="SylhetMonipuriParahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Monipuri Para</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Lutfa Manzil, Alo-5, Monipuri Para, Ambarkhana, Sylhet-3100</p>
+                        </address>
+                    </div>
+            </div>
+
+                 <!-- Barisal -->
+
+            <div id="Barisal" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Barisalhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Barisal</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Bhanga-Barisal Hwy, Barishal</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="BarisalChowMathahub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Barisal ChowMatha</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Dream Palace,Ghosh Bari Len,Choumatha,Barishal</p>
+                    </address>
+                </div>
+            </div> 
+
+            <!--Bagura -->
+
+            <div id="Bagura" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Bagurahub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Bagura</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Bagicha Mohal, House No: 379, D.C Bari Road, Malti-Nagar, Bogura-5800 </p>
+                    </address>
+                </div>
+            </div>
+               
+             <!--Cumilla -->
+
+            <div id="Cumilla" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Cumillahub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Cumilla</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Holding 318, Anamika, West side of Dharmasagor (Beside Baitus Salam Mosque) Joutola, Cumilla</p>
+                    </address>
+                </div>
+            </div>
+<!--end 11-->
+<!-- 12-->
+            <!--Dinajpur -->
+
+            <div id="Dinajpur" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Dinajpurhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Dinajpur</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Holding No 503, Notun para, bisso road, Dinajpur, Bangladesh.</p>
+                    </address>
+                </div>
+            </div>
+
+            <!--Feni -->
+
+            <div id="Feni" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Fenihub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Feni</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">366, Idris Mension (1st Floor), Mohipal,Feni.</p>
+                    </address>
+                </div>
+            </div>
+
+            <!--Gazipur -->
+
+            <div id="Gazipur" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Gazipurhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Gazipur</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Molla Tower, South of Bhawal Badre Alam Govt. College, Dhaka (Tangail Highway)</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="GazipurChowRastahub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Gazipur ChowRasta</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">House: 21, Road: 02, Master Villa, Chandona Chowrasta, Gazipur, Dhaka</p>
+                    </address>
+                </div>
+            </div>
+
+             <!--Jessore -->
+
+            <div id="Jessore" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Jessorehub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Jessore</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">House No 1453, Rasel Square, Rail Road, Jashore.</p>
+                    </address>
+                </div>
+            </div>
+
+             <!--Kishorganj -->
+
+             <div id="Kishorganj" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Kishorganjhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Kishorganj</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">House #933 (Ground floor), Gaital, Mymensingh Road, Kishoregonj</p>
+                    </address>
+                </div>
+            </div>
+
+             <!--Kustia-->
+
+             <div id="Kustia" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Kustiahub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Kustia</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">45 M M road, bozlur mor, arua para, Kushtia</p>
+                    </address>
+                </div>
+            </div>
+
+            <!--Mymensing-->
+
+            <div id="Mymensing" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Mymensinghub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Mymensing</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">23 No. Sehra, (Opposite of Purobi Cinnema Hall), Dhaka Road, Sehora, Mymensing-2200.</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick="MymensingBagmarahub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Bagmara</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">68 (Beside Of Vatikashor Gorostan Mosjid), Bagmara, Sadar, Mymensingh</p>
+                    </address>
+                </div>
+            </div>
+<!--end 12-->  
+<!-- 13-->          
+            <!--Narayanganj-->
+
+            <div id="Narayanganj" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Narayanganjhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Narayanganj</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">475/b/2, South Enayatnagar, Word No-08, Thana-Siddhirganj, Dist: Narayanganj, 1430</p>
+                    </address>
+                </div>
+                <div class="city-box" onclick=" Jamtolahub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub  Jamtola</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">6 No, Haji Brother's Road, Narayanganj, 1400</p>
+                    </address>
+                </div>
+            </div>
+
+             <!--Narsingdi-->
+
+             <div id="Narsingdi" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Narsingdihub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Narsingdi</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">House No: 497, Titas Gas office Mor, Chinishpur, Narsingdi Sadar, Narsingdi- 1602</p>
+                    </address>
+                </div>
+            </div>
+
+            <!--Rangpur-->
+
+            <div id="Rangpur" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Rangpurhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Rangpur</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">House no 97, Road No 1, Station Road, Alamnogor, Rangpur</p>
+                    </address>
+                </div>
+            </div>
+
+            <!--Savar-->
+
+            <div id="Savar" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Savarhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Savar</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">8/8 Tarapur (West side of Mukti Hospital), Muktir Mor, Savar Thana Rd, Savar, Dhaka</p>
+                    </address>
+                </div>
+            </div>
+
+             <!--Tangail-->
+
+             <div id="Tangail" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Tangailhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Tangail</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Holding Number:-0646-00, Akur Takur Para, Taltola Road,Tangail-1900</p>
+                    </address>
+                </div>
+            </div>
+
+            <!--Faridpur-->
+
+            <div id="Faridpur" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Faridpurhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Faridpur</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">128, Raghunandonpur, Thana:-Kotowali, District:-Faridpur</p>
+                    </address>
+                </div>
+            </div>
+
+            <!--Cox Bazar-->
+
+            <div id="CoxBazar" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="CoxBazarhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Cox Bazar</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">1292 Pahartoli Road, Cox's Bazar</p>
+                    </address>
+                </div>
+            </div>
+<!--end 13-->
+<!-- 14-->
+            <!--Manikgonj-->
+
+            <div id="Manikgonj" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Manikgonjhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Manikgonj</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Golden Tower, Nagar Vaban Road, Manikgonj-1800</p>
+                    </address>
+                </div>
+            </div>
+
+            <!--Gopalganj-->
+
+            <div id="Gopalganj" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Gopalganjhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Gopalganj</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">501, Getpara, Thana & District:-Gopalganj</p>
+                    </address>
+                </div>
+            </div>
+
+            <!--Jhenaidah-->
+
+            <div id="Jhenaidah" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Jhenaidahhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Jhenaidah</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Holding No:-110/4, HSS Road, Kanconnagar, Modern Mor, Jhenaidah</p>
+                    </address>
+                </div>
+            </div>
+
+            <!--Moulvibazar-->
+
+            <div id="Moulvibazar" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Moulvibazarhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Moulvibazar</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Holding number 667, Nuagaw primary school road, Rogunondopur, Moulvibazar 3200.</p>
+                    </address>
+                </div>
+            </div>
+
+            <!--Noakhali-->
+
+            <div id="Noakhali" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Noakhalihub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Noakhali</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Rofiq Monzil, Ward:-08, Anantapur, Post:-Puraton College, Thana:-Begumgonj, District:-Noakhali</p>
+                    </address>
+                </div>
+            </div>
+
+            <!--Sirajgonj-->
+
+            <div id="Sirajgonj" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Sirajgonjhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Sirajgonj</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Vill:-Hossainpur (MA Motin Road) Thana:-Sirajgonj Sadar, Post:-Sirajgonj Sadar, District:- Sirajgonj</p>
+                    </address>
+                </div>
+            </div>
+
+            <!--Pabna-->
+
+            <div id="Pabna" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Pabnahub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Pabna</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Hafeza Monzil, Pathortola,Pabna</p>
+                    </address>
+                </div>
+            </div>
+
+            <!--Naogaon-->
+
+            <div id="Naogaon" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Naogaonhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Naogaon</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Bangabaria, Munshipara Near by Thana Mor, Post:-Naogaon, District:-Naogaon.</p>
+                    </address>
+                </div>
+            </div>
+<!--end 14-->
+<!-- 15-->
+            <!--Bagerhat-->
+
+            <div id="Bagerhat" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Bagerhathub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Bagerhat</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">27/1, Doshani Main Road, Ward No: 03, Bagerhat.</p>
+                    </address>
+                </div>
+            </div>
+
+            <!--Tongi-->
+
+            <div id="Tongi" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Tongihub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Tongi</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Holding No:-16, Ward:-54, Sofiuddin Sarker Road, Thana:-East Tongi, District:-Gazipur</p>
+                    </address>
+                </div>
+            </div>
+
+            <!--Chandpur -->
+
+            <div id="Chandpur" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Chandpurhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Chandpur </strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Mothkhola Government Muk O Bodhir High School Mor, Fajilot Plaza, Word -13, Siraj Patwarir bari, Chandpur Sadar, Chandpur.</p>
+                    </address>
+                </div>
+            </div>
+
+             <!--Chapai Nawabganj -->
+
+            <div id="ChapaiNawabganj" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="ChapaiNawabganjhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Chapai Nawabganj</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Mofiz Vhaban, 72 Hujrapur, Jhilim Road, Jolojog mor, Chapai Nababganj.</p>
+                    </address>
+                </div>
+            </div>
+
+            <!-- Gaibandha  -->
+
+            <div id="Gaibandha" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Gaibandhahub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Gaibandha </strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">House:-44, V-aid Road, Khandokar mor, Gaibandha Sadar, Gaibandha.</p>
+                    </address>
+                </div>
+            </div>
+
+            <!-- Satkhira    --> 
+
+            <div id="Satkhira" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Satkhirahub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Satkhira </strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">P.N School & College Road, West Dighirpar, Pranshayer, Sathkhira.</p>
+                    </address>
+                </div>
+            </div>
+
+            <!-- Jamalpur  -->
+
+            <div id="Jamalpur" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Jamalpurhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Jamalpur</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Blue Bird Kindergarten School Road, Bojapur, Jamalpur Sadar, Jamalpur</p>
+                    </address>
+                </div>
+            </div>
+
+            <!-- Kurigram   -->
+
+            <div id="Kurigram" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Kurigramhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Kurigram</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Banik Plazza, Kalibari Bazar Road, Kurigram Sadar, Kurigram</p>
+                    </address>
+                </div>
+            </div>
+<!--end 15-->
+<!-- 16-->
+            <!-- Nilphamari   -->
+
+            <div id="Nilphamari" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Nilphamarihub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Nilphamari</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Kalitola, Moshiur Rahman Degree College, Songlogno, Saidpur Road, Word no- 9, Saidpur.</p>
+                    </address>
+                </div>
+            </div>
+            
+            <!-- Magura -->
+
+            <div id="Magura" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Magurahub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Magura</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Vill: Vaina, Chopdar para, Magura 7600 , Magura Sadar, Magura</p>
+                    </address>
+                </div>
+            </div>
+
+             <!-- Thakurgaon    -->
+
+             <div id="Thakurgaon" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Thakurgaonhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Thakurgaon</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Hajipara Circuit House Road, Opposite side of Police Fari, Thakurgaon sadar, Thakurgaon</p>
+                    </address>
+                </div>
+            </div>
+
+             <!-- Madaripur    -->
+
+             <div id="Madaripur" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Madaripurhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Madaripur</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Rafiq Super Market, 1st Floor, Mill Gate, Iterpul, Madaripur-7900.</p>
+                    </address>
+                </div>
+            </div>
+
+             <!-- Habiganj    -->
+
+             <div id="Habiganj" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Habiganjhub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Habiganj</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Holding no:2005, Ram Krisno mission Road, Ghatia Bazar, Habigonj Sadar, Habigonj.</p>
+                    </address>
+                </div>
+            </div>
+
+             <!-- Brahamanbaria  -->
+
+             <div id="Brahamanbaria" class="city-container" style="display: none; cursor: pointer;">
+                <div class="city-box" onclick="Brahamanbariahub()">
+                    <address>
+                        <h5 style="color:#ff7102"><strong>Hub Brahamanbaria</strong></h5>
+                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                        <p style="display: inline;">Holding no:0571, Word no: khoyasar, Obaidul Muktadi Road, Brahamanbaria sadar, Brahamanbaria.</p>
+                    </address>
+                </div>
+            </div>
+
+        </div>
+        </div>
+</div>
+<!---END-->
+<!--end 16 -->
+<!-- 17 -->
+<!--  FAQ
+<div class="row" style="padding: 0 5px; font-family: Roboto,Helvetica,Arial,sans-serif !important;">
+        <div class="col-sm-12" style="padding: 0;margin-top: -12px;">
+            <section id="" class="acrdion-main block-acrdion-main">
+                <h3 class="heading text-center" style="background-color: #ff7102; color: #fff; padding: 10px 0; margin: 60px 0 30px 0;">FAQs</h3>
+                <div class="panel-group accordion-content" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed">What is a Daraz Customer Return Drop Off & Pickup  Point? </a><i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h4>
+                        </div>
+                        <div class="panel-collapse">
+                            <div class="panel-body">
+                                <div class="fbck " style="display: block;">
+                                    <div class="question ">
+                                        <p>Daraz Customer Return Drop Off & Pickup  Point is where you can drop your return package for valid claim.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed">What is the timing for dropping return at Drop Off & Pickup  point?</a><i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h4>
+                        </div>
+                        <div class="panel-collapse">
+                            <div class="panel-body">
+                                <div class="fbck " style="display: block;">
+                                    <div class="question"><p>From Saturday to Thursday, 10 am to 6 pm.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed">What are the conditions to Return a package at Drop Off & Pickup  point?</a><i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h4>
+                        </div>
+                        <div class="panel-collapse">
+                            <div class="panel-body">
+                                    <div class="question">
+                                        <p>Please check out our<a href="https://www.daraz.com.bd/wow/i/bd/help-pages/how-to-return?spm=a2a0e.home.footer_top.4.73521b94Cfh1z9&hybrid=1&scm=1003.4.icms-zebra-100022982-2888436.OTHER_5476360785_2538013" style="color:#005387 !important"> return policy </a>  for more information. </p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed">Where can I find a Daraz Customer Return Drop Off & Pickup  Point?
+                            </a><i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h4>
+                        </div>
+                        <div class="panel-collapse">
+                            <div class="panel-body">
+                                <div class="fbck " style="display: block;">
+                                    <div class="question">
+                                        <p>Fabulous Question! We have 38 Daraz Drop Off & Pickup  Points across the country. Select the location on the<span id="identify" style="color: #337ab7; cursor: pointer; text-decoration: none;">map</span> to identify the Drop Off & Pickup  point which is closest to you. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed">Do I need an appointment to visit a Daraz Customer Return Drop Off & Pickup  Point?</a><i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h4>
+                        </div>
+                        <div class="panel-collapse">
+                            <div class="panel-body">
+                                <div class="fbck " style="display: block;">
+                                    <div class="question">
+                                        <p>Appointments are not required. Come as you are at our given office time! Our guides will make sure to dedicate their time to help you to return the package.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed">After creating the return how long I will get to Drop Off & Pickup  the product?</a><i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h4>
+                        </div>
+                        <div class="panel-collapse">
+                            <div class="panel-body">
+                                <div class="fbck " style="display: block;">
+                                    <div class="question"><p>Please drop your product within 2 Working Days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed">Will I get any return receipt from daraz Drop Off & Pickup  point after dropping off?</a><i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h4>
+                        </div>
+                        <div class="panel-collapse">
+                            <div class="panel-body">
+                                <div class="fbck " style="display: block;">
+                                    <div class="question"><p>Yes, Hub Representatives will provide you the document.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed">Can I drop return products in Govt. holiday?</a><i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h4>
+                        </div>
+                        <div class="panel-collapse">
+                            <div class="panel-body">
+                                <div class="fbck " style="display: block;">
+                                    <div class="question"><p>We are sorry to inform you that we are closed on Govt. holiday. You can drop on immediate working days.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed">What is the processing time of customer return after dropping at Drop Off & Pickup  Point?</a><i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h4>
+                        </div>
+                        <div class="panel-collapse">
+                            <div class="panel-body">
+                                <div class="fbck " style="display: block;">
+                                    <div class="question"><p>Approximately 6 to 7 Working Days. Please contact our customer care if your return is not processed within 7 working days.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a class="accordion-toggle collapsed">Drop Off & Pickup  Point Representative will do any Quality Check or Not?</a><i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i></h4>
+                        </div>
+                        <div class="panel-collapse">
+                            <div class="panel-body">
+                                <div class="fbck " style="display: block;">
+                                    <div class="question"><p>No, representative will not do any QC at Daraz Drop Off & Pickup  point. They are not responsible to check anything. They will just receive the product from customer and will send the package to Daraz QC Center. QC Center will do the necessary QC based on customer complaint. Customers are requested to provide product and package as per return policy. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>-->
+
+
+   <!--  FAQs End -->
+   <!--end 17 -->
+   <!-- 18 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+
+   $("#Chittagong").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d400.6281522118906!2d91.8139269!3d22.3272159!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd8b5af6fffff%3A0x5c645883f9998b89!2sOsman+Court!5e1!3m2!1sen!2sbd!4v1553503034575";
+    });
+    $("#Khulna").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.671356709166!2d89.55270681496398!3d22.814638385058696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9003e6f08927%3A0xc9cabd5a44986a26!2s47+KDA+Ave%2C+Khulna+9100!5e0!3m2!1sen!2sbd!4v1553503580227";
+    });
+    $("#Rajshahi").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d908.6317528428937!2d88.60545063194427!3d24.362963568740156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDIxJzQ1LjkiTiA4OMKwMzYnMjAuNCJF!5e0!3m2!1sen!2sbd!4v1553504127842";
+    });
+    $("#Sylhet").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.116737940646!2d91.87542211500345!3d24.893999384038047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375054d3183e2a6d%3A0x9d18400c9293647f!2sRahman+Tower%2C+Naiorpool+Rd%2C+Sylhet!5e0!3m2!1sen!2sbd!4v1553504479153";
+    });
+    $("#Barisal").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.681435245379!2d90.35021231496194!3d22.702899985115835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzEwLjQiTiA5MMKwMjEnMDguNiJF!5e0!3m2!1sen!2sbd!4v1593668873405!5m2!1sen!2sbd";
+    });
+    $("#Bagura").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.446042685358!2d89.3727557150026!3d24.84861108405952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDUwJzU1LjAiTiA4OcKwMjInMjkuOCJF!5e0!3m2!1sen!2sbd!4v1553502969206";
+    });
+    $("#Cumilla").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.8834927363387!2d91.17522801497597!3d23.464666684730954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzUyLjgiTiA5McKwMTAnMzguNyJF!5e0!3m2!1sen!2sbd!4v1553512375289";
+    });
+    $("#Dinajpur").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.001272391343!2d88.64661691501841!3d25.638083283693074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zMjXCsDM4JzE3LjEiTiA4OMKwMzgnNTUuNyJF!5e0!3m2!1sen!2sbd!4v1553503229994";
+    });
+    $("#Feni").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.387838426292!2d91.38170021496754!3d23.009527784959715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAwJzM0LjMiTiA5McKwMjMnMDIuMCJF!5e0!3m2!1sen!2sbd!4v1553503302921";
+    });
+    $("#Gazipur").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1083.7149582096656!2d90.37343732815292!3d23.989840589346617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU5JzIxLjgiTiA5MMKwMjInMjguNSJF!5e0!3m2!1sen!2sbd!4v1553503444708";
+    });
+    $("#Jessore").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3668.248668751005!2d89.2097129!3d23.1611226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDA5JzM5LjkiTiA4OcKwMTInNDIuMCJF!5e0!3m2!1sen!2sbd!4v1553503508248";
+    });
+    $("#Kishorganj").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d14605.609049102246!2d90.407815!3d23.7686858!3m2!1i1024!2i768!4f13.1!3m2!1m1!2sDaraz+Pickup+Station!5e0!3m2!1sen!2sbd!4v1553503651760";
+    });
+    $("#Kustia").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d455.96329065112184!2d89.1363061!3d23.9000303!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU0JzAwLjAiTiA4OcKwMDgnMTAuNSJF!5e0!3m2!1sen!2sbd!4v1553503769800";
+    });
+    $("#Mymensing").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14605.609049102246!2d90.407815!3d23.7686858!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37564fced8d8c547%3A0x28075c2afeb3dad6!2sDaraz%2C+Mymensingh+2200!5e0!3m2!1sen!2sbd!4v1553503841248";
+    });
+    $("#Narayanganj").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d724.7809493540348!2d90.50467318650762!3d23.642690020317627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM4JzMzLjAiTiA5MMKwMzAnMTguMCJF!5e1!3m2!1sen!2sbd!4v1568540406670!5m2!1sen!2sbd";
+    });
+    $("#Narsingdi").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.770080532055!2d90.70317241498483!3d23.93319438449953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU1JzU5LjUiTiA5MMKwNDInMTkuMyJF!5e0!3m2!1sen!2sbd!4v1553503996433";
+    });
+    $("#Rangpur").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.031490478326!2d89.25642241502042!3d25.73647218364808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zMjXCsDQ0JzExLjMiTiA4OcKwMTUnMzEuMCJF!5e0!3m2!1sen!2sbd!4v1553504299697";
+    });
+    $("#Savar").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.451601890409!2d90.24795751498301!3d23.838092384546247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xda347308f858d434!2sDaraz+Savar+Hub!5e0!3m2!1sen!2sbd!4v1553504376093";
+    });
+    $("#Tangail").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1818.7855153892026!2d89.91471125807661!3d24.256777796085537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDE1JzI0LjQiTiA4OcKwNTQnNTYuOSJF!5e0!3m2!1sen!2sbd!4v1553504543628";
+    });
+    $("#Faridpur").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.0205212506742!2d89.81978612919082!3d23.601388899041453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM2JzA1LjAiTiA4OcKwNDknMTMuMiJF!5e0!3m2!1sen!2sbd!4v1553779538947";
+    });
+    $("#CoxBazar").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.701565428771!2d91.98389461493962!3d21.44097218577654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI2JzI3LjUiTiA5McKwNTknMDkuOSJF!5e0!3m2!1sen!2sbd!4v1553780952057";
+    });
+    $("#Manikgonj").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d858.7694374351989!2d90.00650842920722!3d23.858416699033512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDUxJzMwLjMiTiA5MMKwMDAnMjUuNCJF!5e1!3m2!1sen!2sbd!4v1553781084841";
+    });
+    $("#Gopalganj").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d740.2911508263196!2d89.8215334!3d23.0017708!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ffc282b2251d67%3A0x428381e98904286e!2z4KaX4KeL4Kaq4Ka-4Kay4KaX4Kae4KeN4KacIOCmrOCmvuCmsuCmv-CmleCmviDgpongpprgp43gppog4Kas4Ka_4Kam4KeN4Kav4Ka-4Kay4Kav4Ka8!5e1!3m2!1sbn!2sbd!4v1554022360591!5m2!1sbn!2sbd";
+    });
+// <!--end 18-->
+// <!-- 19-->
+    $("#Jhenaidah").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7111616730012!2d89.18017241497745!3d23.542888884691983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMyJzM0LjQiTiA4OcKwMTAnNTYuNSJF!5e0!3m2!1sen!2sbd!4v1553781276256";
+    });
+    $("#Moulvibazar").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901.8896012219427!2d91.76864477964382!3d24.473611098902946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDI4JzI1LjAiTiA5McKwNDYnMDkuMiJF!5e1!3m2!1sen!2sbd!4v1553781365325";
+    });
+    $("#Noakhali").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.616768022742!2d91.09572801496536!3d22.89061108502009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzI2LjIiTiA5McKwMDUnNTIuNSJF!5e0!3m2!1sen!2sbd!4v1553781466631";
+    });
+    $("#Sirajgonj").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1815.9961047735765!2d89.71093345807755!3d24.45105559606216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDI3JzAzLjgiTiA4OcKwNDInNDMuMyJF!5e0!3m2!1sen!2sbd!4v1553781562186";
+    });
+    $("#Pabna").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d857.8271616516963!2d89.23731392920737!3d24.000166699029165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAwJzAwLjYiTiA4OcKwMTQnMTYuMyJF!5e1!3m2!1sbn!2sbd!4v1553781634920";
+    });
+    $("#Naogaon").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d852.2453044327789!2d88.93148062920837!3d24.824249999004444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ5JzI3LjMiTiA4OMKwNTUnNTUuMyJF!5e1!3m2!1sbn!2sbd!4v1553781695277";
+    });
+    $("#Bagerhat").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.581172324443!2d89.78038650037071!3d22.657944398832328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDM5JzI4LjYiTiA4OcKwNDYnNTEuNiJF!5e1!3m2!1sen!2sbd!4v1553781762287";
+    });
+    $("#Tongi").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.353656193399!2d90.39228351498441!3d23.91252778450971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU0JzQ1LjEiTiA5MMKwMjMnNDAuMSJF!5e0!3m2!1sen!2sbd!4v1553781843880";
+    });
+    $("#Brahamanbaria").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.3932981293183!2d91.09842331498577!3d23.981884984475876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU4JzU0LjgiTiA5McKwMDYnMDIuMiJF!5e0!3m2!1sen!2sbd!4v1593669366133!5m2!1sen!2sbd";
+    });
+    $("#Chandpur").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.215211430141!2d90.6677836149717!3d23.235254384845756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDE0JzA2LjkiTiA5MMKwNDAnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1593669430670!5m2!1sen!2sbd";
+    });
+    $("#ChapaiNawabganj").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.657494445249!2d88.26945481499772!3d24.601013884176968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDM2JzAzLjciTiA4OMKwMTYnMTcuOSJF!5e0!3m2!1sen!2sbd!4v1593669527270!5m2!1sen!2sbd";
+    });
+    $("#Gaibandha").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.3510079892267!2d89.54842231501209!3d25.32599998383644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDE5JzMzLjYiTiA4OcKwMzMnMDIuMiJF!5e0!3m2!1sen!2sbd!4v1593669592023!5m2!1sen!2sbd";
+    });
+    $("#Habiganj").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3633.7781577355095!2d91.40955511499358!3d24.38901958427834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDIzJzIwLjUiTiA5McKwMjQnNDIuMyJF!5e0!3m2!1sen!2sbd!4v1593669643414!5m2!1sen!2sbd";
+    });
+    $("#Jamalpur").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.339604283781!2d89.95036301500403!3d24.92049828402557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU1JzEzLjgiTiA4OcKwNTcnMDkuMiJF!5e0!3m2!1sen!2sbd!4v1593669710053!5m2!1sen!2sbd"
+    });
+    $("#Kurigram").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.654669382795!2d89.64376901502202!3d25.814964483612695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDQ4JzUzLjkiTiA4OcKwMzgnNDUuNSJF!5e0!3m2!1sen!2sbd!4v1593669769906!5m2!1sen!2sbd";
+    });
+    $("#Madaripur").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.079017366136!2d90.19425931497044!3d23.167315984879938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEwJzAyLjMiTiA5MMKwMTEnNDcuMiJF!5e0!3m2!1sen!2sbd!4v1593669824988!5m2!1sen!2sbd";
+    });
+    $("#Magura").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.425354077114!2d89.4215063149763!3d23.481183984722733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI4JzUyLjMiTiA4OcKwMjUnMjUuMyJF!5e0!3m2!1sen!2sbd!4v1593669875783!5m2!1sen!2sbd";
+    });
+    $("#Nilphamari").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.5071377964005!2d88.86247331502415!3d25.918567983565854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDU1JzA2LjgiTiA4OMKwNTEnNTIuOCJF!5e0!3m2!1sen!2sbd!4v1593669927399!5m2!1sen!2sbd";
+    });
+    $("#Satkhira").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.4712091466113!2d89.06753161496209!3d22.710720785111853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzM4LjYiTiA4OcKwMDQnMTEuMCJF!5e0!3m2!1sen!2sbd!4v1593669972458!5m2!1sen!2sbd";
+    });
+    $("#Thakurgaon").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.126797007874!2d88.46820331502641!3d26.029406983516026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDAxJzQ1LjkiTiA4OMKwMjgnMTMuNCJF!5e0!3m2!1sen!2sbd!4v1593670352552!5m2!1sen!2sbd";
+    });
+
+    
+    </script>
+<!--end 19 -->
+<!-- 20 -->
+    <script>
+    function Chittagonghub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d400.6281522118906!2d91.8139269!3d22.3272159!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd8b5af6fffff%3A0x5c645883f9998b89!2sOsman+Court!5e1!3m2!1sen!2sbd!4v1553503034575";
+    }
+    function Khulnahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.671356709166!2d89.55270681496398!3d22.814638385058696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9003e6f08927%3A0xc9cabd5a44986a26!2s47+KDA+Ave%2C+Khulna+9100!5e0!3m2!1sen!2sbd!4v1553503580227";
+    }
+    function Rajshahihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d908.6317528428937!2d88.60545063194427!3d24.362963568740156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDIxJzQ1LjkiTiA4OMKwMzYnMjAuNCJF!5e0!3m2!1sen!2sbd!4v1553504127842";
+    }
+    function Sylhethub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.116737940646!2d91.87542211500345!3d24.893999384038047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375054d3183e2a6d%3A0x9d18400c9293647f!2sRahman+Tower%2C+Naiorpool+Rd%2C+Sylhet!5e0!3m2!1sen!2sbd!4v1553504479153";
+    }
+    function SylhetMonipuriParahub(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.116737940646!2d91.87542211500345!3d24.893999384038047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375054d3183e2a6d%3A0x9d18400c9293647f!2sRahman+Tower%2C+Naiorpool+Rd%2C+Sylhet!5e0!3m2!1sen!2sbd!4v1553504479153";
+    }
+    function Barisalhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.681435245379!2d90.35021231496194!3d22.702899985115835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzEwLjQiTiA5MMKwMjEnMDguNiJF!5e0!3m2!1sen!2sbd!4v1593668873405!5m2!1sen!2sbd";
+    }
+    function Bagurahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.446042685358!2d89.3727557150026!3d24.84861108405952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDUwJzU1LjAiTiA4OcKwMjInMjkuOCJF!5e0!3m2!1sen!2sbd!4v1553502969206";
+    }
+    function Cumillahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.8834927363387!2d91.17522801497597!3d23.464666684730954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzUyLjgiTiA5McKwMTAnMzguNyJF!5e0!3m2!1sen!2sbd!4v1553512375289";
+    }
+    function Dinajpurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.001272391343!2d88.64661691501841!3d25.638083283693074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zMjXCsDM4JzE3LjEiTiA4OMKwMzgnNTUuNyJF!5e0!3m2!1sen!2sbd!4v1553503229994";
+    }
+    function Fenihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.387838426292!2d91.38170021496754!3d23.009527784959715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAwJzM0LjMiTiA5McKwMjMnMDIuMCJF!5e0!3m2!1sen!2sbd!4v1553503302921";
+    }
+    function Gazipurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1083.7149582096656!2d90.37343732815292!3d23.989840589346617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU5JzIxLjgiTiA5MMKwMjInMjguNSJF!5e0!3m2!1sen!2sbd!4v1553503444708";
+    }
+    function GazipurChowRastahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.1752174672974!2d90.38255761498593!3d23.989588984471943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755db7278679867%3A0x1573b19dbf6c0cdd!2sDaraz%20Gazipur-ChowRasta%20Collection%20Point!5e0!3m2!1sen!2sbd!4v1583820106781!5m2!1sen!2sbd";
+    }
+    function Jessorehub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3668.248668751005!2d89.2097129!3d23.1611226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDA5JzM5LjkiTiA4OcKwMTInNDIuMCJF!5e0!3m2!1sen!2sbd!4v1553503508248";
+    }
+    function Kishorganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d14605.609049102246!2d90.407815!3d23.7686858!3m2!1i1024!2i768!4f13.1!3m2!1m1!2sDaraz+Pickup+Station!5e0!3m2!1sen!2sbd!4v1553503651760";
+    }
+    function Kustiahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d455.96329065112184!2d89.1363061!3d23.9000303!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU0JzAwLjAiTiA4OcKwMDgnMTAuNSJF!5e0!3m2!1sen!2sbd!4v1553503769800";
+    }
+    function Mymensinghub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14605.609049102246!2d90.407815!3d23.7686858!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37564fced8d8c547%3A0x28075c2afeb3dad6!2sDaraz%2C+Mymensingh+2200!5e0!3m2!1sen!2sbd!4v1553503841248";
+    }
+    function MymensingBagmarahub(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.450626124635!2d90.40786861500054!3d24.745734184108116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37564f9aec63b827%3A0x803ef94470c142b3!2sDaraz%20Mymensingh-Bagmara%20Collection%20Point!5e0!3m2!1sen!2sbd!4v1583823278601!5m2!1sen!2sbd";
+    }
+    function Narayanganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d724.7809493540348!2d90.50467318650762!3d23.642690020317627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM4JzMzLjAiTiA5MMKwMzAnMTguMCJF!5e1!3m2!1sen!2sbd!4v1568540406670!5m2!1sen!2sbd";
+    }
+    function Jamtolahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.8594271902205!2d90.49434522919086!3d23.624490699040727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b1beb3140fcf%3A0x299afe891b4f1391!2sDaraz%20Jamtola%20Collection%20Point%20-%20Narayanganj!5e0!3m2!1sen!2sbd!4v1583757763323!5m2!1sen!2sbd";
+    }
+    function Narsingdihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.770080532055!2d90.70317241498483!3d23.93319438449953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU1JzU5LjUiTiA5MMKwNDInMTkuMyJF!5e0!3m2!1sen!2sbd!4v1553503996433";
+    }
+    function Rangpurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.031490478326!2d89.25642241502042!3d25.73647218364808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zMjXCsDQ0JzExLjMiTiA4OcKwMTUnMzEuMCJF!5e0!3m2!1sen!2sbd!4v1553504299697";
+    }
+    function Savarhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.451601890409!2d90.24795751498301!3d23.838092384546247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xda347308f858d434!2sDaraz+Savar+Hub!5e0!3m2!1sen!2sbd!4v1553504376093";
+    }
+    function Tangailhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1818.7855153892026!2d89.91471125807661!3d24.256777796085537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDE1JzI0LjQiTiA4OcKwNTQnNTYuOSJF!5e0!3m2!1sen!2sbd!4v1553504543628";
+    }
+    function Dhanmondihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3652.064817661932!2d90.3817541!3d23.7450679!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8ba11974a2f%3A0x99e120f8ab2f1961!2sDaraz+Bangladesh+Dhanmondi+Hub!5e0!3m2!1sen!2sbd!4v1553504712768";
+    }
+    function Mirpurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.3754908078795!2d90.36758571498238!3d23.80524318456235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1354223e0c9%3A0xd0f49783fd142719!2sDaraz+Mirpur+Hub!5e0!3m2!1sen!2sbd!4v1553504773392";
+    }
+    function TejgaonSortCenterhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d456.43058934526334!2d90.40420611710417!3d23.767173172703856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ2JzAxLjUiTiA5MMKwMjQnMTUuOCJF!5e0!3m2!1sen!2sbd!4v1553504652718";
+    }
+    function Keranigonjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d456.43058934526334!2d90.40420611710417!3d23.767173172703856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ2JzAxLjUiTiA5MMKwMjQnMTUuOCJF!5e0!3m2!1sen!2sbd!4v1553504652718";
+    }
+    function Mohammadpurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d456.43058934526334!2d90.40420611710417!3d23.767173172703856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ2JzAxLjUiTiA5MMKwMjQnMTUuOCJF!5e0!3m2!1sen!2sbd!4v1553504652718";
+    }
+    function OldTownhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d456.43058934526334!2d90.40420611710417!3d23.767173172703856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ2JzAxLjUiTiA5MMKwMjQnMTUuOCJF!5e0!3m2!1sen!2sbd!4v1553504652718";
+    }
+    function Uttara1hub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d126.8637920945285!2d90.4020256284843!3d23.87577729851504!2m2!1f169.42163841807908!2f45!3m2!1i1024!2i768!4f35!5e1!3m2!1sen!2sbd!4v1571901044151!5m2!1sen!2sbd";
+    }
+    function Uttara2hub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3648.3418457284665!2d90.3887784!3d23.8774939!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c414284c47db%3A0xfe302a391d2e1a1a!2sMadchef%20Uttara!5e0!3m2!1sen!2sbd!4v1571903452963!5m2!1sen!2sbd";
+    }
+    function Kalshihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.841849786469!2d90.39197801498274!3d23.824222184552937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ5JzI3LjIiTiA5MMKwMjMnMzkuMCJF!5e0!3m2!1sen!2sbd!4v1571903616885!5m2!1sen!2sbd";
+    }
+// <!--end 20-->
+// <!-- 21-->
+    function MirpurZooRoadhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!4v1571903679965!6m8!1m7!1s1svVMzkR9cSkVWQg1IxqvA!2m2!1d23.80721309913616!2d90.35132705661043!3f261.74!4f2.9399999999999977!5f0.7820865974627469";
+    }
+    function MirpurPirerbaghub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.9362070915304!2d90.36549921498201!3d23.785285884572172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0b7cae91c1b%3A0x938b002a16b67d93!2sAmtola%20Bazaar!5e0!3m2!1sen!2sbd!4v1571903718784!5m2!1sen!2sbd";
+    }
+    function Kalachandpurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d912.5668113215521!2d90.420241!3d23.8090941!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ4JzMyLjciTiA5MMKwMjUnMTMuNyJF!5e0!3m2!1sen!2sbd!4v1571903806265!5m2!1sen!2sbd";
+    }
+    function NatunBazaar1hub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!4v1571903842980!6m8!1m7!1swkJ5wrnb2gvPs152Hl3tgQ!2m2!1d23.79476160393893!2d90.42617567700698!3f162.86!4f14.25!5f1.1924812503605782";
+    }
+    function Zigatolahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!4v1571904356693!6m8!1m7!1s8tq7_hGr2KNp7hLU4z-uzw!2m2!1d23.73863342645001!2d90.37579552182589!3f241.82!4f0!5f0.7820865974627469";
+    }
+    function Khilgaon1hub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.83067924922!2d90.4390057149814!3d23.75341668458784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ1JzEyLjMiTiA5MMKwMjYnMjguMyJF!5e0!3m2!1sen!2sbd!4v1571904543034!5m2!1sen!2sbd";
+    }
+    function Uttara1hub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d126.8637920945285!2d90.4020256284843!3d23.87577729851504!2m2!1f169.42163841807908!2f45!3m2!1i1024!2i768!4f35!5e1!3m2!1sen!2sbd!4v1571901044151!5m2!1sen!2sbd";
+    }
+    function Malibaghhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.957669260047!2d90.41039461498131!3d23.748888884590162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ0JzU2LjAiTiA5MMKwMjQnNDUuMyJF!5e0!3m2!1sen!2sbd!4v1571904605834!5m2!1sen!2sbd";
+    }
+    function Motijheelhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.477855018451!2d90.42639461498096!3d23.730333284599297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQzJzQ5LjIiTiA5MMKwMjUnNDIuOSJF!5e0!3m2!1sen!2sbd!4v1571904639155!5m2!1sen!2sbd";
+    }
+    function Tejgaonhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.5840721063582!2d90.40250131498156!3d23.76220708458349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9868192eb59%3A0x8a059cf957601733!2sDaraz%20Delivery%20Point%2C%20TejgaonSortCenter!5e0!3m2!1sen!2sbd!4v1571905479443!5m2!1sen!2sbd";
+    }
+    function Faridpurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.0205212506742!2d89.81978612919082!3d23.601388899041453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM2JzA1LjAiTiA4OcKwNDknMTMuMiJF!5e0!3m2!1sen!2sbd!4v1553779538947";
+    }
+    function CoxBazarhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.701565428771!2d91.98389461493962!3d21.44097218577654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI2JzI3LjUiTiA5McKwNTknMDkuOSJF!5e0!3m2!1sen!2sbd!4v1553780952057";
+    }
+    function Manikgonjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d858.7694374351989!2d90.00650842920722!3d23.858416699033512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDUxJzMwLjMiTiA5MMKwMDAnMjUuNCJF!5e1!3m2!1sen!2sbd!4v1553781084841";
+    }
+    function Gopalganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d740.2911508263196!2d89.8215334!3d23.0017708!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ffc282b2251d67%3A0x428381e98904286e!2z4KaX4KeL4Kaq4Ka-4Kay4KaX4Kae4KeN4KacIOCmrOCmvuCmsuCmv-CmleCmviDgpongpprgp43gppog4Kas4Ka_4Kam4KeN4Kav4Ka-4Kay4Kav4Ka8!5e1!3m2!1sbn!2sbd!4v1554022360591!5m2!1sbn!2sbd";
+    }
+    function Jhenaidahhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7111616730012!2d89.18017241497745!3d23.542888884691983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMyJzM0LjQiTiA4OcKwMTAnNTYuNSJF!5e0!3m2!1sen!2sbd!4v1553781276256";
+    }
+    function Moulvibazarhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901.8896012219427!2d91.76864477964382!3d24.473611098902946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDI4JzI1LjAiTiA5McKwNDYnMDkuMiJF!5e1!3m2!1sen!2sbd!4v1553781365325";
+    }
+    function Noakhalihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.616768022742!2d91.09572801496536!3d22.89061108502009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzI2LjIiTiA5McKwMDUnNTIuNSJF!5e0!3m2!1sen!2sbd!4v1553781466631";
+    }
+    function Sirajgonjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1815.9961047735765!2d89.71093345807755!3d24.45105559606216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDI3JzAzLjgiTiA4OcKwNDInNDMuMyJF!5e0!3m2!1sen!2sbd!4v1553781562186";
+    }
+    function Pabnahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d857.8271616516963!2d89.23731392920737!3d24.000166699029165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAwJzAwLjYiTiA4OcKwMTQnMTYuMyJF!5e1!3m2!1sbn!2sbd!4v1553781634920";
+    }
+    function Naogaonhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d852.2453044327789!2d88.93148062920837!3d24.824249999004444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ5JzI3LjMiTiA4OMKwNTUnNTUuMyJF!5e1!3m2!1sbn!2sbd!4v1553781695277";
+    }
+    function Bagerhathub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.581172324443!2d89.78038650037071!3d22.657944398832328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDM5JzI4LjYiTiA4OcKwNDYnNTEuNiJF!5e1!3m2!1sen!2sbd!4v1553781762287";
+    }
+    function Tongihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.353656193399!2d90.39228351498441!3d23.91252778450971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU0JzQ1LjEiTiA5MMKwMjMnNDAuMSJF!5e0!3m2!1sen!2sbd!4v1553781843880";
+    }
+    function BarishalChowMathahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.74046567176!2d90.34867291496187!3d22.70070348511699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzAyLjUiTiA5MMKwMjEnMDMuMSJF!5e0!3m2!1sen!2sbd!4v1593671870670!5m2!1sen!2sbd";
+    }
+    function Lakshmipurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.1771153904365!2d90.8298654149663!3d22.943703384993032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU2JzM3LjMiTiA5MMKwNDknNTUuNCJF!5e0!3m2!1sen!2sbd!4v1593672166881!5m2!1sen!2sbd";    
+    }
+    function Brahamanbariahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.353656193399!2d90.39228351498441!3d23.91252778450971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU0JzQ1LjEiTiA5MMKwMjMnNDAuMSJF!5e0!3m2!1sen!2sbd!4v1553781843880";
+    }
+    function Chandpurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.215211430141!2d90.6677836149717!3d23.235254384845756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDE0JzA2LjkiTiA5MMKwNDAnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1593669430670!5m2!1sen!2sbd";
+    }
+    function ChapaiNawabganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.657494445249!2d88.26945481499772!3d24.601013884176968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDM2JzAzLjciTiA4OMKwMTYnMTcuOSJF!5e0!3m2!1sen!2sbd!4v1593669527270!5m2!1sen!2sbd";
+    }
+    function Gaibandhahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.3510079892267!2d89.54842231501209!3d25.32599998383644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDE5JzMzLjYiTiA4OcKwMzMnMDIuMiJF!5e0!3m2!1sen!2sbd!4v1593669592023!5m2!1sen!2sbd";
+    }
+    function Habiganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3633.7781577355095!2d91.40955511499358!3d24.38901958427834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDIzJzIwLjUiTiA5McKwMjQnNDIuMyJF!5e0!3m2!1sen!2sbd!4v1593669643414!5m2!1sen!2sbd";
+    }
+    function Jamalpurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.339604283781!2d89.95036301500403!3d24.92049828402557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU1JzEzLjgiTiA4OcKwNTcnMDkuMiJF!5e0!3m2!1sen!2sbd!4v1593669710053!5m2!1sen!2sbd";
+    }
+    function Kurigramhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.654669382795!2d89.64376901502202!3d25.814964483612695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDQ4JzUzLjkiTiA4OcKwMzgnNDUuNSJF!5e0!3m2!1sen!2sbd!4v1593669769906!5m2!1sen!2sbd";
+    }
+    function Madaripurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.079017366136!2d90.19425931497044!3d23.167315984879938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEwJzAyLjMiTiA5MMKwMTEnNDcuMiJF!5e0!3m2!1sen!2sbd!4v1593669824988!5m2!1sen!2sbd";
+    }
+    function Magurahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.425354077114!2d89.4215063149763!3d23.481183984722733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI4JzUyLjMiTiA4OcKwMjUnMjUuMyJF!5e0!3m2!1sen!2sbd!4v1593669875783!5m2!1sen!2sbd";
+    }
+    function Nilphamarihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.5071377964005!2d88.86247331502415!3d25.918567983565854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDU1JzA2LjgiTiA4OMKwNTEnNTIuOCJF!5e0!3m2!1sen!2sbd!4v1593669927399!5m2!1sen!2sbd"
+    }
+    function Satkhirahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.4712091466113!2d89.06753161496209!3d22.710720785111853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzM4LjYiTiA4OcKwMDQnMTEuMCJF!5e0!3m2!1sen!2sbd!4v1593669972458!5m2!1sen!2sbd";
+    }
+    function Thakurgaonhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.126797007874!2d88.46820331502641!3d26.029406983516026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDAxJzQ1LjkiTiA4OMKwMjgnMTMuNCJF!5e0!3m2!1sen!2sbd!4v1593670352552!5m2!1sen!2sbd";
+    }
+    </script>
+<!--end 21 -->
+<!-- 22 -->
+    <script>
+$("#findshop").click(function() {
+    $('html,body').animate({
+            scrollTop: $("#shop").offset().top - 100
+        },
+        'slow');
+});
+$("#identify").click(function() {
+    $('html,body').animate({
+            scrollTop: $("#shop").offset().top
+        },
+        'slow');
+});
+$(document).ready(function() {
+    $('.panel-title').click(function() {
+        $(this).find('a').toggleClass('collapsed');
+        $(this).parents('.panel').find('.panel-collapse').slideToggle();
+    });
+    $('.acrdion-title a').click(function() {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active').text('EXPAND ALL');
+            $(this).parents('.acrdion-main').find('.panel-title a').addClass('collapsed');
+            $(this).parents('.acrdion-main').find('.panel').find('.panel-collapse').slideUp();
+        } else {
+            $(this).addClass('active').text('COLLAPSE ALL');
+            $(this).parents('.acrdion-main').find('.panel-title a').removeClass('collapsed');
+            $(this).parents('.acrdion-main').find('.panel').find('.panel-collapse').slideDown();
+        }
+    });
+});
+</script>
+<script>
+        if (/#Dhanmondihub/.test(window.location.href)) {
+            Dhanmondihub();
+        }
+        if (/#Mirpurhub/.test(window.location.href)) {
+            Mirpurhub();
+        }
+        if (/#TejgaonSortCenterhub/.test(window.location.href)) {
+            TejgaonSortCenterhub();
+        }
+        if (/#Mohammadpurhub/.test(window.location.href)) {
+            Mohammadpurhub();
+        }
+        if (/#OldTownhub/.test(window.location.href)) {
+            OldTownhub();
+        }
+        if (/#Keranigonjhub/.test(window.location.href)) {
+            Keranigonjhub();
+        }
+        if (/#Uttara1hub/.test(window.location.href)) {
+            Uttara1hub();
+        }
+        if (/#Uttara2hub/.test(window.location.href)) {
+            Uttara2hub();
+        }
+        if (/#Kalshihub/.test(window.location.href)) {
+            Kalshihub();
+        }
+        if (/#MirpurZooRoadhub/.test(window.location.href)) {
+            MirpurZooRoadhub();
+        }
+        if (/#MirpurPirerbaghub/.test(window.location.href)) {
+            MirpurPirerbaghub();
+        }
+        if (/#Kalachandpurhub/.test(window.location.href)) {
+            Kalachandpurhub();
+        }
+        if (/#NatunBazaar1hub/.test(window.location.href)) {
+            NatunBazaar1hub();
+        }
+        if (/#Zigatolahub/.test(window.location.href)) {
+            Zigatolahub();
+        }
+        if (/#Khilgaon1hub/.test(window.location.href)) {
+            Khilgaon1hub();
+        }
+        if (/#Malibagh1hub/.test(window.location.href)) {
+            Malibaghhub();
+        }
+        if (/#Motijheelhub/.test(window.location.href)) {
+            Motijheelhub();
+        }
+        if (/#Tejgaonhub/.test(window.location.href)) {
+            Tejgaonhub();
+        }
+        if (/#Chittagonghub/.test(window.location.href)) {
+           Chittagonghub();
+        }
+        if (/#Khulnahub/.test(window.location.href)) {
+            Khulnahub();
+        }
+        if (/#Rajshahihub/.test(window.location.href)) {
+            Rajshahihub();
+        }
+        if (/#Sylhethub/.test(window.location.href)) {
+            Sylhethub();
+        }
+// <!--end 22-->
+// <!-- 23-->
+        if (/#SylhetMonipuriParahub/.test(window.location.href)) {
+            SylhetMonipuriParahub();
+        }
+        if (/#Barisalhub/.test(window.location.href)) {
+            Barisalhub();
+        }
+        if (/#Bagurahub/.test(window.location.href)) {
+            Bagurahub();
+        }
+        if (/#Cumillahub/.test(window.location.href)) {
+            Cumillahub();
+        }
+        if (/#Dinajpurhub/.test(window.location.href)) {
+            Dinajpurhub();
+        }
+        if (/#Fenihub/.test(window.location.href)) {
+            Fenihub();
+        }
+        if (/#Gazipurhub/.test(window.location.href)) {
+            Gazipurhub();
+        }
+        if (/#GazipurChowRastahub/.test(window.location.href)) {
+            GazipurChowRastahub();
+        }
+        if (/#Jessorehub/.test(window.location.href)) {
+            Jessorehub();
+        }
+        if (/#Kishorganjhub/.test(window.location.href)) {
+            Kishorganjhub();
+        }
+        if (/#Kustiahub/.test(window.location.href)) {
+            Kustiahub();
+        }
+        if (/#Mymensinghub/.test(window.location.href)) {
+            Mymensinghub();
+        }
+        if (/#MymensingBagmarahub/.test(window.location.href)) {
+            MymensingBagmarahub();
+        }
+        if (/#Narayanganjhub/.test(window.location.href)) {
+            Narayanganjhub();
+        }
+        if (/#Jamtolahub/.test(window.location.href)) {
+            Jamtolahub();
+        }
+        if (/#Narsingdihub/.test(window.location.href)) {
+            Narsingdihub();
+        }
+        if (/#Rangpurhub/.test(window.location.href)) {
+            Rangpurhub();
+        }
+        if (/#Savarhub/.test(window.location.href)) {
+            Savarhub();
+        }
+        if (/#Tangailhub/.test(window.location.href)) {
+            Tangailhub();
+        }
+        if (/#Faridpurhub/.test(window.location.href)) {
+            Faridpurhub();
+        }
+        if (/#CoxBazarhub/.test(window.location.href)) {
+            CoxBazarhub();
+        }
+        if (/#Manikgonjhub/.test(window.location.href)) {
+            Manikgonjhub();
+        }
+        if (/#Gopalganjhub/.test(window.location.href)) {
+            Gopalganjhub();
+        }
+        if (/#Jhenaidahhub/.test(window.location.href)) {
+            Jhenaidahhub();
+        }
+        if (/#Moulvibazarhub/.test(window.location.href)) {
+            Moulvibazarhub();
+        }
+        if (/#Noakhalihub/.test(window.location.href)) {
+            Noakhalihub();
+        }
+        if (/#Sirajgonjhub/.test(window.location.href)) {
+            Sirajgonjhub();
+        }
+        if (/#Pabnahub/.test(window.location.href)) {
+            Pabnahub();
+        }
+        if (/#Naogaonhub/.test(window.location.href)) {
+            Naogaonhub();
+        }
+        if (/#Bagerhathub/.test(window.location.href)) {
+            Bagerhathub();
+        }
+        if (/#Tongihub/.test(window.location.href)) {
+            Tongihub();
+        }
+// <!--end 23-->
+// <!-- 24-->
+        if (/#BarishalChowMathahub/.test(window.location.href)) {
+            BarishalChowMathahub();
+        }
+        if (/#Brahamanbariahub/.test(window.location.href)) {
+            Brahamanbariahub();
+        }
+        if (/#Chandpurhub/.test(window.location.href)) {
+            Chandpurhub();
+        }
+        if (/#ChapaiNawabganjhub/.test(window.location.href)) {
+            ChapaiNawabganjhub();
+        }
+        if (/#Gaibandhahub/.test(window.location.href)) {
+            Gaibandhahub();
+        }
+        if (/#Habiganjhub/.test(window.location.href)) {
+            Habiganjhub();
+        }
+        if (/#Jamalpurhub/.test(window.location.href)) {
+            Jamalpurhub();
+        }
+        if (/#Kurigramhub/.test(window.location.href)) {
+            Kurigramhub();
+        }
+        if (/#Lakshmipurhub/.test(window.location.href)) {
+            Lakshmipurhub();
+        }
+        if (/#Madaripurhub/.test(window.location.href)) {
+            Madaripurhub();
+        }
+        if (/#Magurahub/.test(window.location.href)) {
+            Magurahub();
+        }
+        if (/#Nilphamarihub/.test(window.location.href)) {
+            Nilphamarihub();
+        }
+        if (/#Satkhirahub/.test(window.location.href)) {
+            Satkhirahub();
+        }
+        if (/#Thakurgaonhub/.test(window.location.href)) {
+            Thakurgaonhub();
+        }
+
+        </script>
+<!--end 24 -->
+<!-- 25 -->
+<script>
+
+$("#Dhk").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').show();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Dhaka");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.0153176560597!2d90.38381392919098!3d23.745194399036997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ0JzQyLjciTiA5MMKwMjMnMDMuNyJF!5e0!3m2!1sen!2sbd!4v1553166407384";
+});
+    function Dhanmondi() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3652.064817661932!2d90.3817541!3d23.7450679!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8ba11974a2f%3A0x99e120f8ab2f1961!2sDaraz+Bangladesh+Dhanmondi+Hub!5e0!3m2!1sen!2sbd!4v1553504712768";
+    }
+    function Mirpur() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.3754908078795!2d90.36758571498238!3d23.80524318456235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1354223e0c9%3A0xd0f49783fd142719!2sDaraz+Mirpur+Hub!5e0!3m2!1sen!2sbd!4v1553504773392";
+    }
+    function TejgaonSortCenter() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d456.43058934526334!2d90.40420611710417!3d23.767173172703856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ2JzAxLjUiTiA5MMKwMjQnMTUuOCJF!5e0!3m2!1sen!2sbd!4v1553504652718";
+    }
+    function Keranigonj() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1102.4681395191446!2d90.39467502920701!3d23.69430559903858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQxJzM5LjUiTiA5MMKwMjMnNDIuOCJF!5e1!3m2!1sen!2sbd!4v1553781931278";
+    }
+    function Mohammadpur() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d718.0986928477844!2d90.3589086414605!3d23.773252091513765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ2JzIzLjciTiA5MMKwMjEnMzMuMyJF!5e1!3m2!1sen!2sbd!4v1553782041667";
+    }
+    function OldTown() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d655.8292072088083!2d90.39956824608201!3d23.722596677095346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQzJzIxLjQiTiA5MMKwMjMnNTkuNiJF!5e1!3m2!1sen!2sbd!4v1553782007418";
+    }
+    function Uttara1() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d126.8637920945285!2d90.4020256284843!3d23.87577729851504!2m2!1f169.42163841807908!2f45!3m2!1i1024!2i768!4f35!5e1!3m2!1sen!2sbd!4v1571901044151!5m2!1sen!2sbd";
+    }
+    function Uttara2() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3648.3418457284665!2d90.3887784!3d23.8774939!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c414284c47db%3A0xfe302a391d2e1a1a!2sMadchef%20Uttara!5e0!3m2!1sen!2sbd!4v1571903452963!5m2!1sen!2sbd";
+    }
+    function Kalshi() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.841849786469!2d90.39197801498274!3d23.824222184552937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ5JzI3LjIiTiA5MMKwMjMnMzkuMCJF!5e0!3m2!1sen!2sbd!4v1571903616885!5m2!1sen!2sbd";
+    }
+    function MirpurZooRoad() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!4v1571903679965!6m8!1m7!1s1svVMzkR9cSkVWQg1IxqvA!2m2!1d23.80721309913616!2d90.35132705661043!3f261.74!4f2.9399999999999977!5f0.7820865974627469";
+    }
+    function MirpurPirerbag() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.9362070915304!2d90.36549921498201!3d23.785285884572172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0b7cae91c1b%3A0x938b002a16b67d93!2sAmtola%20Bazaar!5e0!3m2!1sen!2sbd!4v1571903718784!5m2!1sen!2sbd";
+    }
+    function Kalachandpur() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d912.5668113215521!2d90.420241!3d23.8090941!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ4JzMyLjciTiA5MMKwMjUnMTMuNyJF!5e0!3m2!1sen!2sbd!4v1571903806265!5m2!1sen!2sbd";
+    }
+    function NatunBazaar1() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!4v1571903842980!6m8!1m7!1swkJ5wrnb2gvPs152Hl3tgQ!2m2!1d23.79476160393893!2d90.42617567700698!3f162.86!4f14.25!5f1.1924812503605782";
+    }
+    function  Zigatola() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!4v1571904356693!6m8!1m7!1s8tq7_hGr2KNp7hLU4z-uzw!2m2!1d23.73863342645001!2d90.37579552182589!3f241.82!4f0!5f0.7820865974627469";
+    }
+    function Mohammadpur1() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!4v1571904474732!6m8!1m7!1sNmxR2XW0tjLzbw7U1TsrFA!2m2!1d23.77328322497754!2d90.35913953646828!3f316.75!4f2.480000000000004!5f1.1924812503605782";
+    }
+    function Khilgaon1() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.83067924922!2d90.4390057149814!3d23.75341668458784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ1JzEyLjMiTiA5MMKwMjYnMjguMyJF!5e0!3m2!1sen!2sbd!4v1571904543034!5m2!1sen!2sbd";
+    }
+    function Uttara1() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d126.8637920945285!2d90.4020256284843!3d23.87577729851504!2m2!1f169.42163841807908!2f45!3m2!1i1024!2i768!4f35!5e1!3m2!1sen!2sbd!4v1571901044151!5m2!1sen!2sbd";
+    }
+    function Malibagh() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.957669260047!2d90.41039461498131!3d23.748888884590162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ0JzU2LjAiTiA5MMKwMjQnNDUuMyJF!5e0!3m2!1sen!2sbd!4v1571904605834!5m2!1sen!2sbd";
+    }
+    function Motijheel() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.477855018451!2d90.42639461498096!3d23.730333284599297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQzJzQ5LjIiTiA5MMKwMjUnNDIuOSJF!5e0!3m2!1sen!2sbd!4v1571904639155!5m2!1sen!2sbd";
+    }
+    function  Tejgaon() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.5840721063582!2d90.40250131498156!3d23.76220708458349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9868192eb59%3A0x8a059cf957601733!2sDaraz%20Delivery%20Point%2C%20TejgaonSortCenter!5e0!3m2!1sen!2sbd!4v1571905479443!5m2!1sen!2sbd";
+    }
+/*<!--end 25 -->*/
+/*<!-- 26 -->*/
+$("#Ctg").click(function() {
+
+    $('#Chittagong').show();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+    $("#selectcity").text("Chittagong");
+    document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d400.6281522118906!2d91.8139269!3d22.3272159!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd8b5af6fffff%3A0x5c645883f9998b89!2sOsman+Court!5e1!3m2!1sen!2sbd!4v1553503034575";
+});
+function  Lakshmipur() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.1771153904365!2d90.8298654149663!3d22.943703384993032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU2JzM3LjMiTiA5MMKwNDknNTUuNCJF!5e0!3m2!1sen!2sbd!4v1593672166881!5m2!1sen!2sbd";
+    }
+
+$("#Khul").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').show();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Khulna");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.671356709166!2d89.55270681496398!3d22.814638385058696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9003e6f08927%3A0xc9cabd5a44986a26!2s47+KDA+Ave%2C+Khulna+9100!5e0!3m2!1sen!2sbd!4v1553503580227";
+});
+/*<!--end 26 -->*/
+/*<!-- 27 -->*/
+$("#Raj").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').show();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Rajshahi");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d908.6317528428937!2d88.60545063194427!3d24.362963568740156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDIxJzQ1LjkiTiA4OMKwMzYnMjAuNCJF!5e0!3m2!1sen!2sbd!4v1553504127842";
+});
+
+$("#Syl").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').show();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Sylhet");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.116737940646!2d91.87542211500345!3d24.893999384038047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375054d3183e2a6d%3A0x9d18400c9293647f!2sRahman+Tower%2C+Naiorpool+Rd%2C+Sylhet!5e0!3m2!1sen!2sbd!4v1553504479153";
+});
+/*<!--end 27 -->*/
+/*<!-- 28 -->*/
+function SylhetMonipuriParahub(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.770595868174!2d91.86460821500373!3d24.90580548403255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375055c7f2423a71%3A0x59068e71befa4b9b!2sDaraz%20Sylhet-Monipuri%20Para%20Collection%20Point!5e0!3m2!1sen!2sbd!4v1583823645431!5m2!1sen!2sbd";
+    }
+$("#Bar").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').show();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Barisal");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.681435245379!2d90.35021231496194!3d22.702899985115835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzEwLjQiTiA5MMKwMjEnMDguNiJF!5e0!3m2!1sen!2sbd!4v1593668873405!5m2!1sen!2sbd";
+});
+function  BarishalChowMatha() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.74046567176!2d90.34867291496187!3d22.70070348511699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzAyLjUiTiA5MMKwMjEnMDMuMSJF!5e0!3m2!1sen!2sbd!4v1593671870670!5m2!1sen!2sbd";
+}
+
+$("#Bag").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').show();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Bagura");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.446042685358!2d89.3727557150026!3d24.84861108405952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDUwJzU1LjAiTiA4OcKwMjInMjkuOCJF!5e0!3m2!1sen!2sbd!4v1553502969206";
+});
+// <!--end 28 -->
+// <!-- 29-->
+$("#Cumi").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').show();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Cumilla");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.8834927363387!2d91.17522801497597!3d23.464666684730954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzUyLjgiTiA5McKwMTAnMzguNyJF!5e0!3m2!1sen!2sbd!4v1553512375289";
+});
+
+$("#Din").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').show();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Dinajpur");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.001272391343!2d88.64661691501841!3d25.638083283693074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zMjXCsDM4JzE3LjEiTiA4OMKwMzgnNTUuNyJF!5e0!3m2!1sen!2sbd!4v1553503229994";
+});
+/*<!--end 29 -->*/
+/*<!-- 30 -->*/
+
+$("#Fen").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').show();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Feni");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.387838426292!2d91.38170021496754!3d23.009527784959715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAwJzM0LjMiTiA5McKwMjMnMDIuMCJF!5e0!3m2!1sen!2sbd!4v1553503302921";
+});
+
+$("#Gaz").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').show();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Gazipur");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1083.7149582096656!2d90.37343732815292!3d23.989840589346617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU5JzIxLjgiTiA5MMKwMjInMjguNSJF!5e0!3m2!1sen!2sbd!4v1553503444708";
+});
+function Jamtolahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.1752174672974!2d90.38255761498593!3d23.989588984471943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755db7278679867%3A0x1573b19dbf6c0cdd!2sDaraz%20Gazipur-ChowRasta%20Collection%20Point!5e0!3m2!1sen!2sbd!4v1583820106781!5m2!1sen!2sbd";
+    }
+/*<!--end 30 -->*/
+/*<!-- 31 -->*/
+    $("#Jess").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').show();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Jessore");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3668.248668751005!2d89.2097129!3d23.1611226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDA5JzM5LjkiTiA4OcKwMTInNDIuMCJF!5e0!3m2!1sen!2sbd!4v1553503508248";
+});
+
+$("#Kis").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').show();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Kishorganj");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d14605.609049102246!2d90.407815!3d23.7686858!3m2!1i1024!2i768!4f13.1!3m2!1m1!2sDaraz+Pickup+Station!5e0!3m2!1sen!2sbd!4v1553503651760";
+});
+/*<!--end 31 -->*/
+/*<!-- 32 -->*/
+$("#Kus").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').show();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Kustia");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d455.96329065112184!2d89.1363061!3d23.9000303!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU0JzAwLjAiTiA4OcKwMDgnMTAuNSJF!5e0!3m2!1sen!2sbd!4v1553503769800";
+});
+
+$("#Mymen").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').show();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Mymensing");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14605.609049102246!2d90.407815!3d23.7686858!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37564fced8d8c547%3A0x28075c2afeb3dad6!2sDaraz%2C+Mymensingh+2200!5e0!3m2!1sen!2sbd!4v1553503841248";
+});
+function SylhetMonipuriParahub(){
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.450626124635!2d90.40786861500054!3d24.745734184108116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37564f9aec63b827%3A0x803ef94470c142b3!2sDaraz%20Mymensingh-Bagmara%20Collection%20Point!5e0!3m2!1sen!2sbd!4v1583823278601!5m2!1sen!2sbd";
+    }
+/*<!--end 32 -->*/
+/*<!-- 33 -->*/
+$("#Nara").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').show();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Narayanganj");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d724.7809493540348!2d90.50467318650762!3d23.642690020317627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM4JzMzLjAiTiA5MMKwMzAnMTguMCJF!5e1!3m2!1sen!2sbd!4v1568540406670!5m2!1sen!2sbd";
+});
+
+function Narayanganj() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d724.7809493540348!2d90.50467318650762!3d23.642690020317627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM4JzMzLjAiTiA5MMKwMzAnMTguMCJF!5e1!3m2!1sen!2sbd!4v1568540406670!5m2!1sen!2sbd";
+    }
+    function Jamtola() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.8594271902205!2d90.49434522919086!3d23.624490699040727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b1beb3140fcf%3A0x299afe891b4f1391!2sDaraz%20Jamtola%20Collection%20Point%20-%20Narayanganj!5e0!3m2!1sen!2sbd!4v1583757763323!5m2!1sen!2sbd";
+    }
+
+$("#Nars").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').show();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Narsingdi");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.770080532055!2d90.70317241498483!3d23.93319438449953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU1JzU5LjUiTiA5MMKwNDInMTkuMyJF!5e0!3m2!1sen!2sbd!4v1553503996433";
+});
+/*<!--end 33 -->*/
+/*<!-- 34 -->*/
+$("#Ran").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').show();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Rangpur");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.031490478326!2d89.25642241502042!3d25.73647218364808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zMjXCsDQ0JzExLjMiTiA4OcKwMTUnMzEuMCJF!5e0!3m2!1sen!2sbd!4v1553504299697";
+});
+
+$("#Sav").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').show();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Savar");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.451601890409!2d90.24795751498301!3d23.838092384546247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xda347308f858d434!2sDaraz+Savar+Hub!5e0!3m2!1sen!2sbd!4v1553504376093";
+});
+/*<!--end 34 -->*/
+/*<!-- 35 -->*/
+$("#Tan").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').show();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Tangail");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1818.7855153892026!2d89.91471125807661!3d24.256777796085537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDE1JzI0LjQiTiA4OcKwNTQnNTYuOSJF!5e0!3m2!1sen!2sbd!4v1553504543628";
+});
+
+$("#Far").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').show();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Faridpur");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.0205212506742!2d89.81978612919082!3d23.601388899041453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM2JzA1LjAiTiA4OcKwNDknMTMuMiJF!5e0!3m2!1sen!2sbd!4v1553779538947";
+});
+/*<!--end 35 -->*/
+/*<!-- 36 -->*/
+$("#Cox").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').show();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("CoxBazar");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.701565428771!2d91.98389461493962!3d21.44097218577654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI2JzI3LjUiTiA5McKwNTknMDkuOSJF!5e0!3m2!1sen!2sbd!4v1553780952057";
+});
+$("#Man").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').show();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Manikgonj");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d858.7694374351989!2d90.00650842920722!3d23.858416699033512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDUxJzMwLjMiTiA5MMKwMDAnMjUuNCJF!5e1!3m2!1sen!2sbd!4v1553781084841";
+});
+/*<!--end 36 -->*/
+/*<!-- 37 -->*/
+$("#Gop").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').show();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Gopalganj");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d740.2911508263196!2d89.8215334!3d23.0017708!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ffc282b2251d67%3A0x428381e98904286e!2z4KaX4KeL4Kaq4Ka-4Kay4KaX4Kae4KeN4KacIOCmrOCmvuCmsuCmv-CmleCmviDgpongpprgp43gppog4Kas4Ka_4Kam4KeN4Kav4Ka-4Kay4Kav4Ka8!5e1!3m2!1sbn!2sbd!4v1554022360591!5m2!1sbn!2sbd";
+});
+$("#Jhen").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').show();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Jhenaidah");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7111616730012!2d89.18017241497745!3d23.542888884691983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMyJzM0LjQiTiA4OcKwMTAnNTYuNSJF!5e0!3m2!1sen!2sbd!4v1553781276256";
+});
+/*<!--end 37 -->*/
+/*<!-- 38 -->*/
+$("#Mou").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').show();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Moulvibazar");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901.8896012219427!2d91.76864477964382!3d24.473611098902946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDI4JzI1LjAiTiA5McKwNDYnMDkuMiJF!5e1!3m2!1sen!2sbd!4v1553781365325";
+});
+$("#Noa").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').show();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Noakhali");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.616768022742!2d91.09572801496536!3d22.89061108502009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzI2LjIiTiA5McKwMDUnNTIuNSJF!5e0!3m2!1sen!2sbd!4v1553781466631";
+});
+/*<!--end 38 -->*/
+/*<!-- 39 -->*/
+$("#Sira").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').show();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Sirajgonj");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1815.9961047735765!2d89.71093345807755!3d24.45105559606216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDI3JzAzLjgiTiA4OcKwNDInNDMuMyJF!5e0!3m2!1sen!2sbd!4v1553781562186";
+});
+
+$("#Pab").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').show();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Pabna");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d857.8271616516963!2d89.23731392920737!3d24.000166699029165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAwJzAwLjYiTiA4OcKwMTQnMTYuMyJF!5e1!3m2!1sbn!2sbd!4v1553781634920";
+});
+/*<!--end 39 -->*/
+/*<!-- 40 -->*/
+$("#Nao").click(function() {
+
+$('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').show();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Naogaon");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d852.2453044327789!2d88.93148062920837!3d24.824249999004444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ5JzI3LjMiTiA4OMKwNTUnNTUuMyJF!5e1!3m2!1sbn!2sbd!4v1553781695277";
+});
+$("#Bager").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').show();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Bagerhat");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.581172324443!2d89.78038650037071!3d22.657944398832328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDM5JzI4LjYiTiA4OcKwNDYnNTEuNiJF!5e1!3m2!1sen!2sbd!4v1553781762287";
+});
+/*<!--end 40 -->*/
+/*<!-- 41 -->*/
+$("#Ton").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').show();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Tongi");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.353656193399!2d90.39228351498441!3d23.91252778450971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU0JzQ1LjEiTiA5MMKwMjMnNDAuMSJF!5e0!3m2!1sen!2sbd!4v1553781843880";
+});
+
+$("#Bra").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').show();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Brahamanbaria");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.3932981293183!2d91.09842331498577!3d23.981884984475876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU4JzU0LjgiTiA5McKwMDYnMDIuMiJF!5e0!3m2!1sen!2sbd!4v1593669366133!5m2!1sen!2sbd";
+});
+/*<!--end 41 -->*/
+/*<!-- 42 -->*/
+$("#Chad").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').show();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Chandpur");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.215211430141!2d90.6677836149717!3d23.235254384845756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDE0JzA2LjkiTiA5MMKwNDAnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1593669430670!5m2!1sen!2sbd";
+});
+
+$("#Chap").click(function() {
+
+$('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').show();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("ChapaiNawabganj");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.657494445249!2d88.26945481499772!3d24.601013884176968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDM2JzAzLjciTiA4OMKwMTYnMTcuOSJF!5e0!3m2!1sen!2sbd!4v1593669527270!5m2!1sen!2sbd";
+});
+/*<!--end 42 -->*/
+/*<!-- 43 -->*/
+$("#Gai").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').show();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Gaibandha");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.3510079892267!2d89.54842231501209!3d25.32599998383644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDE5JzMzLjYiTiA4OcKwMzMnMDIuMiJF!5e0!3m2!1sen!2sbd!4v1593669592023!5m2!1sen!2sbd";
+});
+
+$("#Habi").click(function() {
+
+$('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').show();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Habiganj");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3633.7781577355095!2d91.40955511499358!3d24.38901958427834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDIzJzIwLjUiTiA5McKwMjQnNDIuMyJF!5e0!3m2!1sen!2sbd!4v1593669643414!5m2!1sen!2sbd";
+});
+/*<!--end 43 -->*/
+/*<!-- 44 -->*/
+$("#Jamal").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').show();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Jamalpur");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.339604283781!2d89.95036301500403!3d24.92049828402557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU1JzEzLjgiTiA4OcKwNTcnMDkuMiJF!5e0!3m2!1sen!2sbd!4v1593669710053!5m2!1sen!2sbd";
+});
+
+$("#Kuri").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').show();
+    $('#Madaripur').hide();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Kurigram");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.654669382795!2d89.64376901502202!3d25.814964483612695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDQ4JzUzLjkiTiA4OcKwMzgnNDUuNSJF!5e0!3m2!1sen!2sbd!4v1593669769906!5m2!1sen!2sbd";
+});
+/*<!--end 44 -->*/
+/*<!-- 45 -->*/
+$("#Mad").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').show();
+    $('#Magura').hide();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Madaripur");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.079017366136!2d90.19425931497044!3d23.167315984879938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEwJzAyLjMiTiA5MMKwMTEnNDcuMiJF!5e0!3m2!1sen!2sbd!4v1593669824988!5m2!1sen!2sbd"
+});
+
+$("#Mag").click(function() {
+
+    $('#Chittagong').hide();
+    $('#Khulna').hide();
+    $('#Rajshahi').hide();
+    $('#Sylhet').hide();
+    $('#Barisal').hide();
+    $('#Bagura').hide();
+    $('#Cumilla').hide();
+    $('#Dinajpur').hide();
+    $('#Feni').hide();
+    $('#Gazipur').hide();
+    $('#Jessore').hide();
+    $('#Kishorganj').hide();
+    $('#Kustia').hide();
+    $('#Mymensing').hide();
+    $('#Narayanganj').hide();
+    $('#Narsingdi').hide();
+    $('#Rangpur').hide();
+    $('#Savar').hide();
+    $('#Tangail').hide();
+    $('#Dhaka').hide();
+    $('#Faridpur').hide();
+    $('#CoxBazar').hide();
+    $('#Manikgonj').hide();
+    $('#Gopalganj').hide();
+    $('#Jhenaidah').hide();
+    $('#Moulvibazar').hide();
+    $('#Noakhali').hide();
+    $('#Sirajgonj').hide();
+    $('#Pabna').hide();
+    $('#Naogaon').hide();
+    $('#Bagerhat').hide();
+    $('#Tongi').hide();
+    $('#Brahamanbaria').hide();
+    $('#Chandpur').hide();
+    $('#ChapaiNawabganj').hide();
+    $('#Gaibandha').hide();
+    $('#Habiganj').hide();
+    $('#Jamalpur').hide();
+    $('#Kurigram').hide();
+    $('#Madaripur').hide();
+    $('#Magura').show();
+    $('#Nilphamari').hide();
+    $('#Satkhira').hide();
+    $('#Thakurgaon').hide();
+
+$("#selectcity").text("Magura");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.425354077114!2d89.4215063149763!3d23.481183984722733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI4JzUyLjMiTiA4OcKwMjUnMjUuMyJF!5e0!3m2!1sen!2sbd!4v1593669875783!5m2!1sen!2sbd";
+});
+/*<!--end 45 -->*/
+/*<!-- 46 -->*/
+$("#Nil").click(function() {
+
+$('#Chittagong').hide();
+$('#Khulna').hide();
+$('#Rajshahi').hide();
+$('#Sylhet').hide();
+$('#Barisal').hide();
+$('#Bagura').hide();
+$('#Cumilla').hide();
+$('#Dinajpur').hide();
+$('#Feni').hide();
+$('#Gazipur').hide();
+$('#Jessore').hide();
+$('#Kishorganj').hide();
+$('#Kustia').hide();
+$('#Mymensing').hide();
+$('#Narayanganj').hide();
+$('#Narsingdi').hide();
+$('#Rangpur').hide();
+$('#Savar').hide();
+$('#Tangail').hide();
+$('#Dhaka').hide();
+$('#Faridpur').hide();
+$('#CoxBazar').hide();
+$('#Manikgonj').hide();
+$('#Gopalganj').hide();
+$('#Jhenaidah').hide();
+$('#Moulvibazar').hide();
+$('#Noakhali').hide();
+$('#Sirajgonj').hide();
+$('#Pabna').hide();
+$('#Naogaon').hide();
+$('#Bagerhat').hide();
+$('#Tongi').hide();
+$('#Brahamanbaria').hide();
+$('#Chandpur').hide();
+$('#ChapaiNawabganj').hide();
+$('#Gaibandha').hide();
+$('#Habiganj').hide();
+$('#Jamalpur').hide();
+$('#Kurigram').hide();
+$('#Madaripur').hide();
+$('#Magura').hide();
+$('#Nilphamari').show();
+$('#Satkhira').hide();
+$('#Thakurgaon').hide();
+
+$("#selectcity").text("Nilphamari");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.5071377964005!2d88.86247331502415!3d25.918567983565854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDU1JzA2LjgiTiA4OMKwNTEnNTIuOCJF!5e0!3m2!1sen!2sbd!4v1593669927399!5m2!1sen!2sbd";
+});
+
+$("#Sat").click(function() {
+
+$('#Chittagong').hide();
+$('#Khulna').hide();
+$('#Rajshahi').hide();
+$('#Sylhet').hide();
+$('#Barisal').hide();
+$('#Bagura').hide();
+$('#Cumilla').hide();
+$('#Dinajpur').hide();
+$('#Feni').hide();
+$('#Gazipur').hide();
+$('#Jessore').hide();
+$('#Kishorganj').hide();
+$('#Kustia').hide();
+$('#Mymensing').hide();
+$('#Narayanganj').hide();
+$('#Narsingdi').hide();
+$('#Rangpur').hide();
+$('#Savar').hide();
+$('#Tangail').hide();
+$('#Dhaka').hide();
+$('#Faridpur').hide();
+$('#CoxBazar').hide();
+$('#Manikgonj').hide();
+$('#Gopalganj').hide();
+$('#Jhenaidah').hide();
+$('#Moulvibazar').hide();
+$('#Noakhali').hide();
+$('#Sirajgonj').hide();
+$('#Pabna').hide();
+$('#Naogaon').hide();
+$('#Bagerhat').hide();
+$('#Tongi').hide();
+$('#Brahamanbaria').hide();
+$('#Chandpur').hide();
+$('#ChapaiNawabganj').hide();
+$('#Gaibandha').hide();
+$('#Habiganj').hide();
+$('#Jamalpur').hide();
+$('#Kurigram').hide();
+$('#Madaripur').hide();
+$('#Magura').hide();
+$('#Nilphamari').hide();
+$('#Satkhira').show();
+$('#Thakurgaon').hide();
+
+$("#selectcity").text("Satkhira");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.4712091466113!2d89.06753161496209!3d22.710720785111853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzM4LjYiTiA4OcKwMDQnMTEuMCJF!5e0!3m2!1sen!2sbd!4v1593669972458!5m2!1sen!2sbd";
+});
+/*<!--end 46 -->*/
+/*<!-- 47 -->*/
+$("#Thakur").click(function() {
+
+$('#Chittagong').hide();
+$('#Khulna').hide();
+$('#Rajshahi').hide();
+$('#Sylhet').hide();
+$('#Barisal').hide();
+$('#Bagura').hide();
+$('#Cumilla').hide();
+$('#Dinajpur').hide();
+$('#Feni').hide();
+$('#Gazipur').hide();
+$('#Jessore').hide();
+$('#Kishorganj').hide();
+$('#Kustia').hide();
+$('#Mymensing').hide();
+$('#Narayanganj').hide();
+$('#Narsingdi').hide();
+$('#Rangpur').hide();
+$('#Savar').hide();
+$('#Tangail').hide();
+$('#Dhaka').hide();
+$('#Faridpur').hide();
+$('#CoxBazar').hide();
+$('#Manikgonj').hide();
+$('#Gopalganj').hide();
+$('#Jhenaidah').hide();
+$('#Moulvibazar').hide();
+$('#Noakhali').hide();
+$('#Sirajgonj').hide();
+$('#Pabna').hide();
+$('#Naogaon').hide();
+$('#Bagerhat').hide();
+$('#Tongi').hide();
+$('#Brahamanbaria').hide();
+$('#Chandpur').hide();
+$('#ChapaiNawabganj').hide();
+$('#Gaibandha').hide();
+$('#Habiganj').hide();
+$('#Jamalpur').hide();
+$('#Kurigram').hide();
+$('#Madaripur').hide();
+$('#Magura').hide();
+$('#Nilphamari').hide();
+$('#Satkhira').hide();
+$('#Thakurgaon').show();
+
+$("#selectcity").text("Thakurgaon");
+document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.126797007874!2d88.46820331502641!3d26.029406983516026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDAxJzQ1LjkiTiA4OMKwMjgnMTMuNCJF!5e0!3m2!1sen!2sbd!4v1593670352552!5m2!1sen!2sbd" ;
+});
+
+
+</script>
+<!--end 47 -->
